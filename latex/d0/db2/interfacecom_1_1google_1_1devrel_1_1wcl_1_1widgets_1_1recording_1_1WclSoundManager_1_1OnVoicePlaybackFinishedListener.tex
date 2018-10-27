@@ -1,0 +1,46 @@
+\hypertarget{interfacecom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_1_1OnVoicePlaybackFinishedListener}{}\section{com.\+google.\+devrel.\+wcl.\+widgets.\+recording.\+Wcl\+Sound\+Manager.\+On\+Voice\+Playback\+Finished\+Listener Interface Reference}
+\label{interfacecom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_1_1OnVoicePlaybackFinishedListener}\index{com.\+google.\+devrel.\+wcl.\+widgets.\+recording.\+Wcl\+Sound\+Manager.\+On\+Voice\+Playback\+Finished\+Listener@{com.\+google.\+devrel.\+wcl.\+widgets.\+recording.\+Wcl\+Sound\+Manager.\+On\+Voice\+Playback\+Finished\+Listener}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_1_1OnVoicePlaybackFinishedListener_a44e4bbac75b55c37cf7cbb8bb251b116}{on\+Playback\+Finished} (@\hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_1_1PlaybackFinishedReason}{Playback\+Finished\+Reason} int reason,@Nullable String reason\+Message)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An interface that can inform the caller about the reason the playback was ended. 
+
+\subsection{Member Function Documentation}
+\index{com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager\+::\+On\+Voice\+Playback\+Finished\+Listener@{com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager\+::\+On\+Voice\+Playback\+Finished\+Listener}!on\+Playback\+Finished@{on\+Playback\+Finished}}
+\index{on\+Playback\+Finished@{on\+Playback\+Finished}!com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager\+::\+On\+Voice\+Playback\+Finished\+Listener@{com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager\+::\+On\+Voice\+Playback\+Finished\+Listener}}
+\subsubsection[{\texorpdfstring{on\+Playback\+Finished("@Playback\+Finished\+Reason int reason,"@Nullable String reason\+Message)}{onPlaybackFinished(@PlaybackFinishedReason int reason,@Nullable String reasonMessage)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+widgets.\+recording.\+Wcl\+Sound\+Manager.\+On\+Voice\+Playback\+Finished\+Listener.\+on\+Playback\+Finished (
+\begin{DoxyParamCaption}
+\item[{@{\bf Playback\+Finished\+Reason} int}]{reason, }
+\item[{@Nullable String}]{reason\+Message}
+\end{DoxyParamCaption}
+)}\hypertarget{interfacecom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_1_1OnVoicePlaybackFinishedListener_a44e4bbac75b55c37cf7cbb8bb251b116}{}\label{interfacecom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_1_1OnVoicePlaybackFinishedListener_a44e4bbac75b55c37cf7cbb8bb251b116}
+Called when the playback of the audio file ends. This will be called on the UI thread.
+
+
+\begin{DoxyParams}{Parameters}
+{\em reason} & Can be 
+\begin{DoxyItemize}
+\item \hyperlink{}{S\+U\+C\+C\+E\+SS} Playback ended successfully 
+\item \hyperlink{}{E\+R\+R\+O\+R\+\_\+\+I\+O\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON} An IO Exception was encountered 
+\item \hyperlink{}{E\+R\+R\+O\+R\+\_\+\+P\+L\+A\+Y\+B\+A\+CK} Player encountered an \hyperlink{}{Illegal\+State\+Exception} 
+\item \hyperlink{}{E\+R\+R\+O\+R\+\_\+\+F\+I\+L\+E\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND} File was not found 
+\item \hyperlink{}{I\+N\+T\+E\+R\+R\+U\+P\+T\+ED} Playback was interrupted 
+\end{DoxyItemize}\\
+\hline
+{\em reason\+Message} & A textual reason, may be
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Wearable\+Project\+\_\+\+Complete/\+Wear\+Companion\+Library/\+W\+C\+L/src/main/java/com/google/devrel/wcl/widgets/recording/Wcl\+Sound\+Manager.\+java\end{DoxyCompactItemize}

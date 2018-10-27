@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+
+    <!--  Header  Starts-->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="50dip"
+        android:paddingTop="5dip"></LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Tremor Assessment"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        android:text="Select a Test:"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/ivRestCorrect"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/checkbox" />
+
+        <TextView
+            android:id="@+id/tvRest"
+            style="@style/CategoryStyleSub"
+            android:background="@color/colorMaroon"
+            android:text="Rest Tremor"
+            android:textAlignment="center"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivPosturalCorrect"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/checkbox" />
+
+        <TextView
+            android:id="@+id/tvPostural"
+            style="@style/CategoryStyleSub"
+            android:background="@color/colorWarmGrey"
+            android:text="Postural Tremor"
+            android:textAlignment="center"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivIntentionCorrect"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/checkbox" />
+
+        <TextView
+            android:id="@+id/tvIntention"
+            style="@style/CategoryStyleSub"
+            android:background="@color/colorMaroon"
+            android:text="Intention Tremor"
+            android:textAlignment="center"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivKineticCorrect"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/checkbox" />
+
+        <TextView
+            android:id="@+id/tvKinetic"
+            style="@style/CategoryStyleSub"
+            android:background="@color/colorWarmGrey"
+            android:text="Kinetic Tremor"
+            android:textAlignment="center"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

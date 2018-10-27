@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2015 Google Inc. All Rights Reserved.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ imitations under the License.
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.android.wearable.wcldemo" >
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MobileApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+
+    <activity android:name=".LoginActivity"
+        android:label="mHealth-Monitor">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+    <!-- Entry for RegisterActivity.class -->
+    <activity
+        android:name=".RegisterActivity"
+        android:label="Register New Account" />
+    <!-- Entry for HistoryActivity.class -->
+    <activity
+        android:name=".HistoryActivity"
+        android:label="User History" />
+
+    <activity android:name=".TestListActivity" />
+    <activity
+        android:name=".TremorActivity"
+        android:label="@string/title_activity_tremor"
+        android:theme="@style/AppTheme.NoActionBar" />
+    <activity android:name=".TremorRestActivity"/>
+    <activity android:name=".TremorPosturalActivity" />
+    <activity android:name=".TremorIntentionActivity" />
+    <activity android:name=".TremorKineticActivity" />
+    <activity android:name=".CognitiveActivity" />
+    <activity android:name=".CognitiveColorShapeTestActivity" />
+    <activity android:name=".BradykinesiaActivity" />
+    <activity android:name=".FingerTappingActivity" />
+    <activity android:name=".RapidAlternatingMovementsActivity" />
+    <activity android:name=".GifView"
+        android:hardwareAccelerated="false"
+        tools:ignore="ExtraText">
+        android:label="@string/app_name" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    <activity android:name=".BradykinesiaFingerTapActivity">
+    </activity>
+
+
+
+
+
+        <service android:name="com.google.devrel.wcl.WclWearableListenerService">
+            <intent-filter>
+                <action android:name="com.google.android.gms.wearable.BIND_LISTENER" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

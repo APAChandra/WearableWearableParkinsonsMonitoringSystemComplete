@@ -1,0 +1,891 @@
+\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager}{}\section{com.\+google.\+devrel.\+wcl.\+Wear\+Manager Class Reference}
+\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager}\index{com.\+google.\+devrel.\+wcl.\+Wear\+Manager@{com.\+google.\+devrel.\+wcl.\+Wear\+Manager}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_aaf40fd61737e8c52d95d593c85785aa7}{send\+Message} (String node\+Id, String path,@Nullable Data\+Map data\+Map,@Nullable Result\+Callback$<$?super Message\+Api.\+Send\+Message\+Result $>$ callback)
+\item 
+void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_aeb657bce26a4e7aca54627b51e550e87}{send\+Message} (String node\+Id, String path,@Nullable byte\mbox{[}$\,$\mbox{]} bytes,@Nullable final Result\+Callback$<$?super Message\+Api.\+Send\+Message\+Result $>$ callback)
+\item 
+void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a00d603c9084c1a4870252d31f352910f}{send\+Message} (String node\+Id, String path,@Nullable byte\mbox{[}$\,$\mbox{]} bytes)
+\item 
+void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a0bb216530bb18fb38af13e62f839673c}{send\+Http\+Response} (@Nullable String response, int status, String node\+Id, String request\+Id, Result\+Callback$<$?super Message\+Api.\+Send\+Message\+Result $>$ callback)
+\item 
+void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_ac84d14877f2d3db172625477ee8944e5}{put\+Data\+Item} (Put\+Data\+Request request,@Nullable final Result\+Callback$<$?super Data\+Api.\+Data\+Item\+Result $>$ callback)
+\item 
+void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a9a0d60e2ac7035253d20ae3b2ad7e85c}{put\+Data\+Item} (Put\+Data\+Request request)
+\item 
+int \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a0a1d005ca8c26515d89fe8377feb41c3}{put\+Data\+Item\+Synchronous} (Put\+Data\+Request request, long timeout\+In\+Millis)
+\item 
+void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_afe32818d5441719bd637aa569192990c}{put\+Image\+Data} (Bitmap bitmap, String path, String key, boolean is\+Urgent, boolean add\+Timestamp,@Nullable Result\+Callback$<$?super Data\+Api.\+Data\+Item\+Result $>$ callback)
+\item 
+void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_ac248440b3e3b20ea0566b1a7aa4100af}{get\+Data\+Items} (@Nullable final Result\+Callback$<$?super Data\+Item\+Buffer $>$ callback)
+\item 
+void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a757b3a252a37b4149c64fa2393291fe0}{get\+Data\+Items} (Uri uri, int filter\+Type,@Nullable final Result\+Callback$<$?super Data\+Item\+Buffer $>$ callback)
+\item 
+Data\+Item\+Buffer \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a58de012135e7a6fb834de542d5a23da5}{get\+Data\+Items\+Synchronous} (long timeout\+In\+Millis)
+\item 
+Data\+Item\+Buffer \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_aa5b2cdca8ae67601cf9c6e802ee3c48e}{get\+Data\+Items\+Synchronous} (Uri uri, int filter\+Type, long timeout\+In\+Millis)
+\item 
+void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a09228240a5a112a6b6933186a0d783c2}{get\+Data\+Item} (Uri data\+Item\+Uri,@Nullable final Result\+Callback$<$?super Data\+Api.\+Data\+Item\+Result $>$ callback)
+\item 
+Data\+Api.\+Data\+Item\+Result \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_ae3e36b6ba6366a30a7194524d3975902}{get\+Data\+Item\+Synchronous} (Uri data\+Item\+Uri, long timeout\+In\+Millis)
+\item 
+void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a571cf7c7e9c2ed0e759588f53e6ca4f0}{delete\+Data\+Items} (final Uri data\+Item\+Uri,@Nullable final Result\+Callback$<$?super Data\+Api.\+Delete\+Data\+Items\+Result $>$ callback)
+\item 
+Data\+Api.\+Delete\+Data\+Items\+Result \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a34d68a1630f16f04133026619c8fb1c2}{delete\+Data\+Items\+Synchronous} (final Uri data\+Item\+Uri, long timeout\+In\+Millis)
+\item 
+void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_af4d5cdb42452cbedf04e9983ee97e204}{add\+Capabilities} (String...\+capabilities)
+\item 
+void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a2b109af6823821ac6a98a5647e45a999}{remove\+Capabilities} (String...\+capabilities)
+\item 
+void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a36a36044ee9bf8270a9d9d76fc97a22f}{assert\+Api\+Connectivity} ()
+\item 
+void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_ab1ead896194d81adf7750d73e146d7d4}{add\+Wear\+Consumer} (\hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer}{Wear\+Consumer} consumer)
+\item 
+void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a473eca98cfa817fb734f7342bc045ce1}{remove\+Wear\+Consumer} (\hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer}{Wear\+Consumer} consumer)
+\item 
+Set$<$ Node $>$ \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a06adaa67e5280cd12bd2374cab0b0921}{get\+Connected\+Nodes} ()
+\item 
+boolean \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a2cf9fd5b78f9c298da3b3623c4d7b949}{is\+Connected} ()
+\item 
+Set$<$ Node $>$ \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a60e1b28b1bb6dab27fef4e8f212c41e4}{get\+Nodes\+For\+Capability} (String capability)
+\item 
+Set$<$ Node $>$ \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_aad690abbc750b053c44da1a1fb5bcf3c}{get\+Nodes\+For\+Capability} (String capability, \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1filters_1_1NodeSelectionFilter}{Node\+Selection\+Filter} filter)
+\item 
+final Node \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_ac63cd9f17dd837a1ea3a65ef4a37b138}{get\+Node\+By\+Id} (String node\+Id)
+\item 
+boolean \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a4882d628e1f27c1529776ece9a1e1c91}{launch\+App\+On\+Nodes} (@Nullable final String activity\+Name,@Nullable Bundle bundle, boolean relaunch\+If\+Running, final String capability,@Nullable \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1filters_1_1NodeSelectionFilter}{Node\+Selection\+Filter} filter)
+\item 
+void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_ab281c3306888c68d304861fa199e1cb1}{launch\+App\+On\+Node} (@Nullable final String activity\+Name,@Nullable Bundle bundle, boolean relaunch\+If\+Running, Node node)
+\item 
+void {\bfseries send\+File} (final String request\+Id, Channel channel, Uri file, long start\+Offset, long length, Result\+Callback$<$ Status $>$ callback)\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_af5f3b7329747f29380bd90a5080c1e4d}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_af5f3b7329747f29380bd90a5080c1e4d}
+
+\item 
+void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a80cd369af43c6f19a8433470eed04589}{open\+Channel} (Node node, String path, final Wear\+File\+Transfer.\+On\+Channel\+Ready\+Listener listener)
+\item 
+void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a9f55f62796ce9aa183c151d85044063b}{get\+Output\+Stream\+Via\+Channel} (Node node, String path, final Wear\+File\+Transfer.\+On\+Wearable\+Channel\+Output\+Stream\+Listener listener)
+\item 
+void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a8b25b2f519724bf268c276e9ab7895aa}{close\+Channel} (Channel channel)
+\item 
+Bitmap \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_aff2666d2b72754de8d079850282ed8a3}{load\+Bitmap\+From\+Asset\+Synchronous} (Asset asset)
+\item 
+void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_aae268d37d354f957cf2ba645a1299c11}{clean\+Up} ()
+\item 
+void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_ab1fac2df063290c71ac555851a5066c6}{stop\+Wearable\+Service} ()
+\item 
+void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a446c9ae3e23609bc16d87e4ece91ed72}{show\+Wearable\+List} (Activity activity, \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1WearableListConfig}{Wearable\+List\+Config} config)
+\item 
+String \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a74a9367281a0e6c0eccf2d2e7b427254}{get\+Version} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager}{Wear\+Manager} \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a5e9a61518e44bb2c1a89706d51240661}{get\+Instance} ()
+\item 
+static synchronized \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager}{Wear\+Manager} \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_ad167fb70251395681bf1ea569696bc2b}{initialize} (Context context, String...\+capabilities)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A singleton to manage the wear interaction between a device and its connected devices. This class maintains certain states of the system and hides direct interaction with the \hyperlink{}{Google\+Api\+Client}. Clients should initialize this singleton as early as possible (e.\+g. in the on\+Create() of the Application instance). Then, accessing this singleton instance is possible throughout the client application by calling \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a5e9a61518e44bb2c1a89706d51240661}{get\+Instance()}.
+
+In most cases, components within the client application need to have access to certain events and receive messages, data items, etc. Each component can register an implementation of the \hyperlink{}{Wear\+Consumer} interface with the \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager}{Wear\+Manager}. Then, the relevant callbacks within that interface will be called when an event is received or a life-\/cycle change happens. To make this easier, \hyperlink{}{Abstract\+Wear\+Consumer} provides a no-\/op implementation of the \hyperlink{}{Wear\+Consumer} which clients can extend and only override the callbacks that they are interested in. 
+
+\subsection{Member Function Documentation}
+\index{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}!add\+Capabilities@{add\+Capabilities}}
+\index{add\+Capabilities@{add\+Capabilities}!com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}}
+\subsubsection[{\texorpdfstring{add\+Capabilities(\+String...\+capabilities)}{addCapabilities(String...capabilities)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+Wear\+Manager.\+add\+Capabilities (
+\begin{DoxyParamCaption}
+\item[{String...}]{capabilities}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_af4d5cdb42452cbedf04e9983ee97e204}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_af4d5cdb42452cbedf04e9983ee97e204}
+Adds one or more capabilities to the client at runtime. Make sure you balance this with a similar call to \hyperlink{}{remove\+Capabilities(\+String...)}
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a2b109af6823821ac6a98a5647e45a999}{remove\+Capabilities}(String...) 
+\end{DoxySeeAlso}
+\index{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}!add\+Wear\+Consumer@{add\+Wear\+Consumer}}
+\index{add\+Wear\+Consumer@{add\+Wear\+Consumer}!com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}}
+\subsubsection[{\texorpdfstring{add\+Wear\+Consumer(\+Wear\+Consumer consumer)}{addWearConsumer(WearConsumer consumer)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+Wear\+Manager.\+add\+Wear\+Consumer (
+\begin{DoxyParamCaption}
+\item[{{\bf Wear\+Consumer}}]{consumer}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_ab1ead896194d81adf7750d73e146d7d4}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_ab1ead896194d81adf7750d73e146d7d4}
+Adds the \hyperlink{}{Wear\+Consumer} to be managed by this singleton to receive changes in lifecycle or other important callbacks for various event. Calls to this method should be balanced by the calls to \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a473eca98cfa817fb734f7342bc045ce1}{remove\+Wear\+Consumer(\+Wear\+Consumer)} to avoid leaks. Clients should consider building a \hyperlink{}{Wear\+Consumer} by extending \hyperlink{}{Abstract\+Wear\+Consumer} instead of implementing \hyperlink{}{Wear\+Consumer} directly.
+
+\begin{DoxySeeAlso}{See also}
+Abstract\+Wear\+Consumer 
+\end{DoxySeeAlso}
+\index{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}!assert\+Api\+Connectivity@{assert\+Api\+Connectivity}}
+\index{assert\+Api\+Connectivity@{assert\+Api\+Connectivity}!com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}}
+\subsubsection[{\texorpdfstring{assert\+Api\+Connectivity()}{assertApiConnectivity()}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+Wear\+Manager.\+assert\+Api\+Connectivity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a36a36044ee9bf8270a9d9d76fc97a22f}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a36a36044ee9bf8270a9d9d76fc97a22f}
+This method is used to assert that we are connected to the Google Api Client for Wearable A\+P\+Is. If not, it throws an \hyperlink{}{Illegal\+State\+Exception}. \index{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}!clean\+Up@{clean\+Up}}
+\index{clean\+Up@{clean\+Up}!com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}}
+\subsubsection[{\texorpdfstring{clean\+Up()}{cleanUp()}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+Wear\+Manager.\+clean\+Up (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_aae268d37d354f957cf2ba645a1299c11}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_aae268d37d354f957cf2ba645a1299c11}
+A method to clean up the artifacts of the \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager}{Wear\+Manager}. This should be called when we are certain we would not need the \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager}{Wear\+Manager} any more. \index{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}!close\+Channel@{close\+Channel}}
+\index{close\+Channel@{close\+Channel}!com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}}
+\subsubsection[{\texorpdfstring{close\+Channel(\+Channel channel)}{closeChannel(Channel channel)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+Wear\+Manager.\+close\+Channel (
+\begin{DoxyParamCaption}
+\item[{Channel}]{channel}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a8b25b2f519724bf268c276e9ab7895aa}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a8b25b2f519724bf268c276e9ab7895aa}
+Closes the
+\begin{DoxyCode}
+channel 
+\end{DoxyCode}
+ if it is not
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ . \index{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}!delete\+Data\+Items@{delete\+Data\+Items}}
+\index{delete\+Data\+Items@{delete\+Data\+Items}!com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}}
+\subsubsection[{\texorpdfstring{delete\+Data\+Items(final Uri data\+Item\+Uri,"@Nullable final Result\+Callback$<$?super Data\+Api.\+Delete\+Data\+Items\+Result $>$ callback)}{deleteDataItems(final Uri dataItemUri,@Nullable final ResultCallback<?super DataApi.DeleteDataItemsResult > callback)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+Wear\+Manager.\+delete\+Data\+Items (
+\begin{DoxyParamCaption}
+\item[{final Uri}]{data\+Item\+Uri, }
+\item[{@Nullable final Result\+Callback$<$?super Data\+Api.\+Delete\+Data\+Items\+Result $>$}]{callback}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a571cf7c7e9c2ed0e759588f53e6ca4f0}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a571cf7c7e9c2ed0e759588f53e6ca4f0}
+Deletes a data items asynchronously. Caller can specify a \hyperlink{}{Result\+Callback} or pass a
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ ; if a
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ is passed, a default \hyperlink{}{Result\+Callback} will be used that would call \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_aa583d2bbacb7eca35ae83488fbc32f62}{Wear\+Consumer\#on\+Wearable\+Delete\+Data\+Items\+Result(int)}. \index{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}!delete\+Data\+Items\+Synchronous@{delete\+Data\+Items\+Synchronous}}
+\index{delete\+Data\+Items\+Synchronous@{delete\+Data\+Items\+Synchronous}!com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}}
+\subsubsection[{\texorpdfstring{delete\+Data\+Items\+Synchronous(final Uri data\+Item\+Uri, long timeout\+In\+Millis)}{deleteDataItemsSynchronous(final Uri dataItemUri, long timeoutInMillis)}}]{\setlength{\rightskip}{0pt plus 5cm}Data\+Api.\+Delete\+Data\+Items\+Result com.\+google.\+devrel.\+wcl.\+Wear\+Manager.\+delete\+Data\+Items\+Synchronous (
+\begin{DoxyParamCaption}
+\item[{final Uri}]{data\+Item\+Uri, }
+\item[{long}]{timeout\+In\+Millis}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a34d68a1630f16f04133026619c8fb1c2}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a34d68a1630f16f04133026619c8fb1c2}
+Deletes a data items {\bfseries synchronously}. This should only be called on a non-\/\+UI thread. A
+\begin{DoxyCode}
+timeoutInMillis 
+\end{DoxyCode}
+ is required to specify the maximum length of time, in milliseconds, that the thread should be blocked. \index{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}!get\+Connected\+Nodes@{get\+Connected\+Nodes}}
+\index{get\+Connected\+Nodes@{get\+Connected\+Nodes}!com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Connected\+Nodes()}{getConnectedNodes()}}]{\setlength{\rightskip}{0pt plus 5cm}Set$<$Node$>$ com.\+google.\+devrel.\+wcl.\+Wear\+Manager.\+get\+Connected\+Nodes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a06adaa67e5280cd12bd2374cab0b0921}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a06adaa67e5280cd12bd2374cab0b0921}
+Returns a view of the set of currently connected nodes. The returned set will change as nodes connect and disconnect from the Wear network. The set is safe to access from multiple threads. Note that this may contain cloud, as well as nodes that are not directly connected to this node. \index{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}!get\+Data\+Item@{get\+Data\+Item}}
+\index{get\+Data\+Item@{get\+Data\+Item}!com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Data\+Item(\+Uri data\+Item\+Uri,"@Nullable final Result\+Callback$<$?super Data\+Api.\+Data\+Item\+Result $>$ callback)}{getDataItem(Uri dataItemUri,@Nullable final ResultCallback<?super DataApi.DataItemResult > callback)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+Wear\+Manager.\+get\+Data\+Item (
+\begin{DoxyParamCaption}
+\item[{Uri}]{data\+Item\+Uri, }
+\item[{@Nullable final Result\+Callback$<$?super Data\+Api.\+Data\+Item\+Result $>$}]{callback}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a09228240a5a112a6b6933186a0d783c2}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a09228240a5a112a6b6933186a0d783c2}
+Retrieves a single data item with the given
+\begin{DoxyCode}
+dataItemUri 
+\end{DoxyCode}
+ asynchronously. Caller can specify a \hyperlink{}{Result\+Callback} or pass a
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ ; if a
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ is passed, a default \hyperlink{}{Result\+Callback} will be used that will call \hyperlink{}{Wear\+Consumer\#on\+Wearable\+Get\+Data\+Item(int, Data\+Api.\+Data\+Item\+Result)}.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_af3fc892221b8bc9cde08377850f111a5}{Wear\+Consumer\+::on\+Wearable\+Get\+Data\+Item}(int, Data\+Api.\+Data\+Item\+Result) 
+\end{DoxySeeAlso}
+\index{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}!get\+Data\+Items@{get\+Data\+Items}}
+\index{get\+Data\+Items@{get\+Data\+Items}!com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Data\+Items("@Nullable final Result\+Callback$<$?super Data\+Item\+Buffer $>$ callback)}{getDataItems(@Nullable final ResultCallback<?super DataItemBuffer > callback)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+Wear\+Manager.\+get\+Data\+Items (
+\begin{DoxyParamCaption}
+\item[{@Nullable final Result\+Callback$<$?super Data\+Item\+Buffer $>$}]{callback}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_ac248440b3e3b20ea0566b1a7aa4100af}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_ac248440b3e3b20ea0566b1a7aa4100af}
+Retrieves data items asynchronously. Caller can specify a \hyperlink{}{Result\+Callback} or pass a 
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ ; if a
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ is passed, a default \hyperlink{}{Result\+Callback} will be used that calls \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_ae60f2b14534d4ff65b553ef98c3a4c2b}{Wear\+Consumer\#on\+Wearable\+Get\+Data\+Items(int, Data\+Item\+Buffer)}.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_ae60f2b14534d4ff65b553ef98c3a4c2b}{Wear\+Consumer\+::on\+Wearable\+Get\+Data\+Items(int, Data\+Item\+Buffer)} 
+\end{DoxySeeAlso}
+\index{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}!get\+Data\+Items@{get\+Data\+Items}}
+\index{get\+Data\+Items@{get\+Data\+Items}!com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Data\+Items(\+Uri uri, int filter\+Type,"@Nullable final Result\+Callback$<$?super Data\+Item\+Buffer $>$ callback)}{getDataItems(Uri uri, int filterType,@Nullable final ResultCallback<?super DataItemBuffer > callback)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+Wear\+Manager.\+get\+Data\+Items (
+\begin{DoxyParamCaption}
+\item[{Uri}]{uri, }
+\item[{int}]{filter\+Type, }
+\item[{@Nullable final Result\+Callback$<$?super Data\+Item\+Buffer $>$}]{callback}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a757b3a252a37b4149c64fa2393291fe0}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a757b3a252a37b4149c64fa2393291fe0}
+Retrieves data items asynchronously from the Android Wear network, matching the provided U\+RI and filter type. Caller can specify a \hyperlink{}{Result\+Callback} or pass a 
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ ; if a
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ is passed, a default \hyperlink{}{Result\+Callback} will be used that calls \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_ae60f2b14534d4ff65b553ef98c3a4c2b}{Wear\+Consumer\#on\+Wearable\+Get\+Data\+Items(int, Data\+Item\+Buffer)}.
+
+\begin{DoxySeeAlso}{See also}
+Data\+Api\+::get\+Data\+Items(\+Google\+Api\+Client, Uri, int) 
+\end{DoxySeeAlso}
+\index{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}!get\+Data\+Items\+Synchronous@{get\+Data\+Items\+Synchronous}}
+\index{get\+Data\+Items\+Synchronous@{get\+Data\+Items\+Synchronous}!com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Data\+Items\+Synchronous(long timeout\+In\+Millis)}{getDataItemsSynchronous(long timeoutInMillis)}}]{\setlength{\rightskip}{0pt plus 5cm}Data\+Item\+Buffer com.\+google.\+devrel.\+wcl.\+Wear\+Manager.\+get\+Data\+Items\+Synchronous (
+\begin{DoxyParamCaption}
+\item[{long}]{timeout\+In\+Millis}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a58de012135e7a6fb834de542d5a23da5}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a58de012135e7a6fb834de542d5a23da5}
+Retrieves data items synchronously from the Android Wear network. A
+\begin{DoxyCode}
+timeoutInMillis 
+\end{DoxyCode}
+ is required to specify the maximum length of time, in milliseconds, that the thread should be blocked. Caller needs to call
+\begin{DoxyCode}
+release() 
+\end{DoxyCode}
+ on the returned \hyperlink{}{Data\+Item\+Buffer} when done. \index{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}!get\+Data\+Items\+Synchronous@{get\+Data\+Items\+Synchronous}}
+\index{get\+Data\+Items\+Synchronous@{get\+Data\+Items\+Synchronous}!com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Data\+Items\+Synchronous(\+Uri uri, int filter\+Type, long timeout\+In\+Millis)}{getDataItemsSynchronous(Uri uri, int filterType, long timeoutInMillis)}}]{\setlength{\rightskip}{0pt plus 5cm}Data\+Item\+Buffer com.\+google.\+devrel.\+wcl.\+Wear\+Manager.\+get\+Data\+Items\+Synchronous (
+\begin{DoxyParamCaption}
+\item[{Uri}]{uri, }
+\item[{int}]{filter\+Type, }
+\item[{long}]{timeout\+In\+Millis}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_aa5b2cdca8ae67601cf9c6e802ee3c48e}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_aa5b2cdca8ae67601cf9c6e802ee3c48e}
+Retrieves data items {\bfseries synchronously} from the Android Wear network, matching the provided U\+RI and filter type. This should only be called on a non-\/\+UI thread. A
+\begin{DoxyCode}
+timeoutInMillis 
+\end{DoxyCode}
+ is required to specify the maximum length of time, in milliseconds, that the thread should be blocked. Note that caller needs to call
+\begin{DoxyCode}
+release() 
+\end{DoxyCode}
+ on the returned \hyperlink{}{Data\+Item\+Buffer} when done. \index{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}!get\+Data\+Item\+Synchronous@{get\+Data\+Item\+Synchronous}}
+\index{get\+Data\+Item\+Synchronous@{get\+Data\+Item\+Synchronous}!com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Data\+Item\+Synchronous(\+Uri data\+Item\+Uri, long timeout\+In\+Millis)}{getDataItemSynchronous(Uri dataItemUri, long timeoutInMillis)}}]{\setlength{\rightskip}{0pt plus 5cm}Data\+Api.\+Data\+Item\+Result com.\+google.\+devrel.\+wcl.\+Wear\+Manager.\+get\+Data\+Item\+Synchronous (
+\begin{DoxyParamCaption}
+\item[{Uri}]{data\+Item\+Uri, }
+\item[{long}]{timeout\+In\+Millis}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_ae3e36b6ba6366a30a7194524d3975902}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_ae3e36b6ba6366a30a7194524d3975902}
+Retrieves data items with the given
+\begin{DoxyCode}
+dataItemUri 
+\end{DoxyCode}
+ {\bfseries synchronously}. This should be called on non-\/\+UI threads. A
+\begin{DoxyCode}
+timeoutInMillis 
+\end{DoxyCode}
+ is required to specify the maximum length of time, in milliseconds, that the thread should be blocked. \index{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Instance()}{getInstance()}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Wear\+Manager} com.\+google.\+devrel.\+wcl.\+Wear\+Manager.\+get\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a5e9a61518e44bb2c1a89706d51240661}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a5e9a61518e44bb2c1a89706d51240661}
+A static method to get a hold of this singleton after it is initialized. If a client calls this method prior to the initialization of this singleton, an \hyperlink{}{Illegal\+State\+Exception} exception will be thrown. \index{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}!get\+Node\+By\+Id@{get\+Node\+By\+Id}}
+\index{get\+Node\+By\+Id@{get\+Node\+By\+Id}!com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Node\+By\+Id(\+String node\+Id)}{getNodeById(String nodeId)}}]{\setlength{\rightskip}{0pt plus 5cm}final Node com.\+google.\+devrel.\+wcl.\+Wear\+Manager.\+get\+Node\+By\+Id (
+\begin{DoxyParamCaption}
+\item[{String}]{node\+Id}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_ac63cd9f17dd837a1ea3a65ef4a37b138}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_ac63cd9f17dd837a1ea3a65ef4a37b138}
+Returns the connected node with the given
+\begin{DoxyCode}
+nodeId 
+\end{DoxyCode}
+ , if there is one, or
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ otherwise. \index{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}!get\+Nodes\+For\+Capability@{get\+Nodes\+For\+Capability}}
+\index{get\+Nodes\+For\+Capability@{get\+Nodes\+For\+Capability}!com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Nodes\+For\+Capability(\+String capability)}{getNodesForCapability(String capability)}}]{\setlength{\rightskip}{0pt plus 5cm}Set$<$Node$>$ com.\+google.\+devrel.\+wcl.\+Wear\+Manager.\+get\+Nodes\+For\+Capability (
+\begin{DoxyParamCaption}
+\item[{String}]{capability}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a60e1b28b1bb6dab27fef4e8f212c41e4}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a60e1b28b1bb6dab27fef4e8f212c41e4}
+Returns the current set of connected nodes that provide the given
+\begin{DoxyCode}
+capability 
+\end{DoxyCode}
+ .
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_aad690abbc750b053c44da1a1fb5bcf3c}{get\+Nodes\+For\+Capability(\+String, Node\+Selection\+Filter)} 
+\end{DoxySeeAlso}
+\index{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}!get\+Nodes\+For\+Capability@{get\+Nodes\+For\+Capability}}
+\index{get\+Nodes\+For\+Capability@{get\+Nodes\+For\+Capability}!com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Nodes\+For\+Capability(\+String capability, Node\+Selection\+Filter filter)}{getNodesForCapability(String capability, NodeSelectionFilter filter)}}]{\setlength{\rightskip}{0pt plus 5cm}Set$<$Node$>$ com.\+google.\+devrel.\+wcl.\+Wear\+Manager.\+get\+Nodes\+For\+Capability (
+\begin{DoxyParamCaption}
+\item[{String}]{capability, }
+\item[{{\bf Node\+Selection\+Filter}}]{filter}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_aad690abbc750b053c44da1a1fb5bcf3c}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_aad690abbc750b053c44da1a1fb5bcf3c}
+Returns the current set of connected nodes that provide the given
+\begin{DoxyCode}
+capability 
+\end{DoxyCode}
+ and further narrowed down by the provided
+\begin{DoxyCode}
+filter 
+\end{DoxyCode}
+ . If no such node exists, it returns an empty set. Note that
+\begin{DoxyCode}
+filter 
+\end{DoxyCode}
+ cannot be
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ .
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a60e1b28b1bb6dab27fef4e8f212c41e4}{get\+Nodes\+For\+Capability(\+String)} 
+\end{DoxySeeAlso}
+\index{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}!get\+Output\+Stream\+Via\+Channel@{get\+Output\+Stream\+Via\+Channel}}
+\index{get\+Output\+Stream\+Via\+Channel@{get\+Output\+Stream\+Via\+Channel}!com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Output\+Stream\+Via\+Channel(\+Node node, String path, final Wear\+File\+Transfer.\+On\+Wearable\+Channel\+Output\+Stream\+Listener listener)}{getOutputStreamViaChannel(Node node, String path, final WearFileTransfer.OnWearableChannelOutputStreamListener listener)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+Wear\+Manager.\+get\+Output\+Stream\+Via\+Channel (
+\begin{DoxyParamCaption}
+\item[{Node}]{node, }
+\item[{String}]{path, }
+\item[{final Wear\+File\+Transfer.\+On\+Wearable\+Channel\+Output\+Stream\+Listener}]{listener}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a9f55f62796ce9aa183c151d85044063b}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a9f55f62796ce9aa183c151d85044063b}
+Opens an \hyperlink{}{Output\+Stream} to a nearby node. To do this, this method first makes an attempt to open a channel to the target node using the
+\begin{DoxyCode}
+path 
+\end{DoxyCode}
+ that is provided. If successful, then it opens an \hyperlink{}{Output\+Stream} using that channel. Finally, it calls the 
+\begin{DoxyCode}
+listener 
+\end{DoxyCode}
+ when the \hyperlink{}{Output\+Stream} is available. On the target node, clients should register a \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_ab3785816c06c30602573a978fd869da8}{Wear\+Consumer\#on\+Wearable\+Input\+Stream\+For\+Channel\+Opened(int, String, Channel, Input\+Stream)} to be notified of the availability of an \hyperlink{}{Input\+Stream} to handle the incoming bytes.
+
+Caller should register a \hyperlink{}{Wear\+File\+Transfer.\+On\+Wearable\+Channel\+Output\+Stream\+Listener} listener to be notified of the status of the request and to obtain a reference to the \hyperlink{}{Output\+Stream} that is opened upon successful execution.
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & The node to open a channel for data transfer. Note that this node should be nearby otherwise this method will return immediately without performing any additional tasks. \\
+\hline
+{\em path} & The path that will be used to open a channel for transfer. \\
+\hline
+{\em listener} & The listener that will be notified of the status of this request. Upon a successful execution, this listener will receive a pointer to the \hyperlink{}{Output\+Stream} that was opened. \\
+\hline
+\end{DoxyParams}
+\index{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}!get\+Version@{get\+Version}}
+\index{get\+Version@{get\+Version}!com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Version()}{getVersion()}}]{\setlength{\rightskip}{0pt plus 5cm}String com.\+google.\+devrel.\+wcl.\+Wear\+Manager.\+get\+Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a74a9367281a0e6c0eccf2d2e7b427254}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a74a9367281a0e6c0eccf2d2e7b427254}
+Returns the version of this library \index{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}!initialize@{initialize}}
+\index{initialize@{initialize}!com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}}
+\subsubsection[{\texorpdfstring{initialize(\+Context context, String...\+capabilities)}{initialize(Context context, String...capabilities)}}]{\setlength{\rightskip}{0pt plus 5cm}static synchronized {\bf Wear\+Manager} com.\+google.\+devrel.\+wcl.\+Wear\+Manager.\+initialize (
+\begin{DoxyParamCaption}
+\item[{Context}]{context, }
+\item[{String...}]{capabilities}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_ad167fb70251395681bf1ea569696bc2b}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_ad167fb70251395681bf1ea569696bc2b}
+Initializes this singleton. Clients should call this prior to calling any other public method on this singleton. It is required to call this method from within the \hyperlink{}{Application\#on\+Create()} method of the Application instance of the client application.
+
+A \hyperlink{}{Context} is required but this singleton only holds a reference to the (Application) context. Clients can also decide to declare zero or more capabilities to be declared at runtime. Note that at any later time, clients can add or remove any capabilities that are declared at runtime. Here, we set up the Google Api Client instance and call the connect on it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & A context. An application context will be extracted from this to avoid having a reference to any other type of context. \\
+\hline
+{\em capabilities} & (optional) zero or more capabilities, to be declared dynamically by the caller client. \\
+\hline
+\end{DoxyParams}
+\index{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}!is\+Connected@{is\+Connected}}
+\index{is\+Connected@{is\+Connected}!com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}}
+\subsubsection[{\texorpdfstring{is\+Connected()}{isConnected()}}]{\setlength{\rightskip}{0pt plus 5cm}boolean com.\+google.\+devrel.\+wcl.\+Wear\+Manager.\+is\+Connected (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a2cf9fd5b78f9c298da3b3623c4d7b949}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a2cf9fd5b78f9c298da3b3623c4d7b949}
+Returns
+\begin{DoxyCode}
+\textcolor{keyword}{true} 
+\end{DoxyCode}
+ if and only of the Google Api Client for Wearable A\+P\+Is is connected. \index{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}!launch\+App\+On\+Node@{launch\+App\+On\+Node}}
+\index{launch\+App\+On\+Node@{launch\+App\+On\+Node}!com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}}
+\subsubsection[{\texorpdfstring{launch\+App\+On\+Node("@Nullable final String activity\+Name,"@Nullable Bundle bundle, boolean relaunch\+If\+Running, Node node)}{launchAppOnNode(@Nullable final String activityName,@Nullable Bundle bundle, boolean relaunchIfRunning, Node node)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+Wear\+Manager.\+launch\+App\+On\+Node (
+\begin{DoxyParamCaption}
+\item[{@Nullable final String}]{activity\+Name, }
+\item[{@Nullable Bundle}]{bundle, }
+\item[{boolean}]{relaunch\+If\+Running, }
+\item[{Node}]{node}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_ab281c3306888c68d304861fa199e1cb1}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_ab281c3306888c68d304861fa199e1cb1}
+Launches an activity on the given
+\begin{DoxyCode}
+node 
+\end{DoxyCode}
+ .
+
+
+\begin{DoxyParams}{Parameters}
+{\em activity\+Name} & The name of activity to be launched. If this parameter is
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ , then \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a0facaeb65075a01fdd4c7e1049d53cf9}{Wear\+Consumer\#on\+Wearable\+Application\+Launch\+Request\+Received(\+Bundle, boolean)} will be called and client applications need to register this callback to be notified and will be responsible for launching the app. \\
+\hline
+{\em bundle} & A \hyperlink{}{Bundle} that contains additional information to be used in the launch process. If
+\begin{DoxyCode}
+activityName 
+\end{DoxyCode}
+ is not
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ , then this will be passed to the intent that launches the app (set by
+\begin{DoxyCode}
+Intent.setExtras(bundle) 
+\end{DoxyCode}
+ ). If, on the other hand, 
+\begin{DoxyCode}
+activityName 
+\end{DoxyCode}
+ is
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ , then this bundle will be passed to the callback \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a0facaeb65075a01fdd4c7e1049d53cf9}{Wear\+Consumer\#on\+Wearable\+Application\+Launch\+Request\+Received(\+Bundle, boolean)} \\
+\hline
+{\em relaunch\+If\+Running} & If
+\begin{DoxyCode}
+\textcolor{keyword}{true} 
+\end{DoxyCode}
+ and
+\begin{DoxyCode}
+activityName != null 
+\end{DoxyCode}
+ , then the activity will be relaunched even if the application is currently running. If
+\begin{DoxyCode}
+\textcolor{keyword}{false} 
+\end{DoxyCode}
+ and if 
+\begin{DoxyCode}
+activityName != null 
+\end{DoxyCode}
+ , then the activity will be launched only if the client application is not in the foreground. If
+\begin{DoxyCode}
+activityName == null 
+\end{DoxyCode}
+ , this will be passed to \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a0facaeb65075a01fdd4c7e1049d53cf9}{Wear\+Consumer\#on\+Wearable\+Application\+Launch\+Request\+Received(\+Bundle, boolean)}\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\#launch\+App\+On\+Nodes(\+String, Bundle, boolean, String, Node\+Selection\+Filter) 
+\end{DoxySeeAlso}
+\index{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}!launch\+App\+On\+Nodes@{launch\+App\+On\+Nodes}}
+\index{launch\+App\+On\+Nodes@{launch\+App\+On\+Nodes}!com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}}
+\subsubsection[{\texorpdfstring{launch\+App\+On\+Nodes("@Nullable final String activity\+Name,"@Nullable Bundle bundle, boolean relaunch\+If\+Running, final String capability,"@Nullable Node\+Selection\+Filter filter)}{launchAppOnNodes(@Nullable final String activityName,@Nullable Bundle bundle, boolean relaunchIfRunning, final String capability,@Nullable NodeSelectionFilter filter)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean com.\+google.\+devrel.\+wcl.\+Wear\+Manager.\+launch\+App\+On\+Nodes (
+\begin{DoxyParamCaption}
+\item[{@Nullable final String}]{activity\+Name, }
+\item[{@Nullable Bundle}]{bundle, }
+\item[{boolean}]{relaunch\+If\+Running, }
+\item[{final String}]{capability, }
+\item[{@Nullable {\bf Node\+Selection\+Filter}}]{filter}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a4882d628e1f27c1529776ece9a1e1c91}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a4882d628e1f27c1529776ece9a1e1c91}
+Launches an activity on the nodes identified by the given capability and filter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em activity\+Name} & The name of activity to be launched. If this parameter is
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ , then \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a0facaeb65075a01fdd4c7e1049d53cf9}{Wear\+Consumer\#on\+Wearable\+Application\+Launch\+Request\+Received(\+Bundle, boolean)} will be called and client applications need to register this callback to be notified and will be responsible for launching the app. \\
+\hline
+{\em bundle} & A \hyperlink{}{Bundle} that contains additional information to be used in the launch process. If
+\begin{DoxyCode}
+activityName 
+\end{DoxyCode}
+ is not
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ , then this will be passed to the intent that launches the app (set by
+\begin{DoxyCode}
+Intent.setExtras(bundle) 
+\end{DoxyCode}
+ ). If, on the other hand, 
+\begin{DoxyCode}
+activityName 
+\end{DoxyCode}
+ is
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ , then this bundle will be passed to the callback \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a0facaeb65075a01fdd4c7e1049d53cf9}{Wear\+Consumer\#on\+Wearable\+Application\+Launch\+Request\+Received(\+Bundle, boolean)} \\
+\hline
+{\em relaunch\+If\+Running} & If
+\begin{DoxyCode}
+\textcolor{keyword}{true} 
+\end{DoxyCode}
+ and
+\begin{DoxyCode}
+activityName != null 
+\end{DoxyCode}
+ , then the activity will be relaunched even if the application is currently running. If
+\begin{DoxyCode}
+\textcolor{keyword}{false} 
+\end{DoxyCode}
+ and if 
+\begin{DoxyCode}
+activityName != null 
+\end{DoxyCode}
+ , then the activity will be launched only if the client application is not in the foreground. If
+\begin{DoxyCode}
+activityName == null 
+\end{DoxyCode}
+ , this will be passed to \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a0facaeb65075a01fdd4c7e1049d53cf9}{Wear\+Consumer\#on\+Wearable\+Application\+Launch\+Request\+Received(\+Bundle, boolean)} \\
+\hline
+{\em capability} & The capability that is used to find the target nodes \\
+\hline
+{\em filter} & If not
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ , it is will be applied to the list of nodes that provide the given capability. If
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ , the default \hyperlink{}{Nearby\+Filter} will be used. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}
+\textcolor{keyword}{true} 
+\end{DoxyCode}
+ if and only of the combination of
+\begin{DoxyCode}
+capability 
+\end{DoxyCode}
+ and
+\begin{DoxyCode}
+filter 
+\end{DoxyCode}
+ results in a non-\/empty set of qualified node(s).
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\#launch\+App\+On\+Node(\+String, Bundle, boolean, Node) 
+\end{DoxySeeAlso}
+\index{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}!load\+Bitmap\+From\+Asset\+Synchronous@{load\+Bitmap\+From\+Asset\+Synchronous}}
+\index{load\+Bitmap\+From\+Asset\+Synchronous@{load\+Bitmap\+From\+Asset\+Synchronous}!com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}}
+\subsubsection[{\texorpdfstring{load\+Bitmap\+From\+Asset\+Synchronous(\+Asset asset)}{loadBitmapFromAssetSynchronous(Asset asset)}}]{\setlength{\rightskip}{0pt plus 5cm}Bitmap com.\+google.\+devrel.\+wcl.\+Wear\+Manager.\+load\+Bitmap\+From\+Asset\+Synchronous (
+\begin{DoxyParamCaption}
+\item[{Asset}]{asset}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_aff2666d2b72754de8d079850282ed8a3}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_aff2666d2b72754de8d079850282ed8a3}
+Extracts \hyperlink{}{android.\+graphics.\+Bitmap} data from an \hyperlink{}{com.\+google.\+android.\+gms.\+wearable.\+Asset}, in a blocking way, hence should not be called on the UI thread. This may return
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ . \index{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}!open\+Channel@{open\+Channel}}
+\index{open\+Channel@{open\+Channel}!com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}}
+\subsubsection[{\texorpdfstring{open\+Channel(\+Node node, String path, final Wear\+File\+Transfer.\+On\+Channel\+Ready\+Listener listener)}{openChannel(Node node, String path, final WearFileTransfer.OnChannelReadyListener listener)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+Wear\+Manager.\+open\+Channel (
+\begin{DoxyParamCaption}
+\item[{Node}]{node, }
+\item[{String}]{path, }
+\item[{final Wear\+File\+Transfer.\+On\+Channel\+Ready\+Listener}]{listener}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a80cd369af43c6f19a8433470eed04589}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a80cd369af43c6f19a8433470eed04589}
+Initiates opening a channel to a nearby node. When done, it will call the
+\begin{DoxyCode}
+listener 
+\end{DoxyCode}
+ and passes the status code of the request and the channel that was opened. Note that if the request was not successful, the channel passed to the listener will be
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ . ~\newline
+ {\bfseries Note\+:} It is the responsibility of the caller to close the channel and the stream when it is done.
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & The node to which a channel should be opened. Note that
+\begin{DoxyCode}
+node.isNearby() 
+\end{DoxyCode}
+ should return
+\begin{DoxyCode}
+\textcolor{keyword}{true} 
+\end{DoxyCode}
+ otherwise this method throws an \hyperlink{}{Illegal\+Argument\+Exception} exception. \\
+\hline
+{\em path} & The path used for opening a channel \\
+\hline
+{\em listener} & The listener that is called when this request is completed. \\
+\hline
+\end{DoxyParams}
+\index{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}!put\+Data\+Item@{put\+Data\+Item}}
+\index{put\+Data\+Item@{put\+Data\+Item}!com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}}
+\subsubsection[{\texorpdfstring{put\+Data\+Item(\+Put\+Data\+Request request,"@Nullable final Result\+Callback$<$?super Data\+Api.\+Data\+Item\+Result $>$ callback)}{putDataItem(PutDataRequest request,@Nullable final ResultCallback<?super DataApi.DataItemResult > callback)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+Wear\+Manager.\+put\+Data\+Item (
+\begin{DoxyParamCaption}
+\item[{Put\+Data\+Request}]{request, }
+\item[{@Nullable final Result\+Callback$<$?super Data\+Api.\+Data\+Item\+Result $>$}]{callback}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_ac84d14877f2d3db172625477ee8944e5}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_ac84d14877f2d3db172625477ee8944e5}
+Adds a data item asynchronously. Caller can specify a \hyperlink{}{Result\+Callback} or pass a 
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ ; if
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ is passed, a default \hyperlink{}{Result\+Callback} will be used which will call \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a39149dc277ecb6ed75e3a5214a61f97a}{Wear\+Consumer\#on\+Wearable\+Send\+Data\+Result(int)} and passes the status code of the result.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a9a0d60e2ac7035253d20ae3b2ad7e85c}{put\+Data\+Item(\+Put\+Data\+Request)} 
+\end{DoxySeeAlso}
+\index{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}!put\+Data\+Item@{put\+Data\+Item}}
+\index{put\+Data\+Item@{put\+Data\+Item}!com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}}
+\subsubsection[{\texorpdfstring{put\+Data\+Item(\+Put\+Data\+Request request)}{putDataItem(PutDataRequest request)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+Wear\+Manager.\+put\+Data\+Item (
+\begin{DoxyParamCaption}
+\item[{Put\+Data\+Request}]{request}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a9a0d60e2ac7035253d20ae3b2ad7e85c}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a9a0d60e2ac7035253d20ae3b2ad7e85c}
+Adds a data item asynchronously. A default \hyperlink{}{Result\+Callback} will be used to capture the result of this call.
+
+\begin{DoxySeeAlso}{See also}
+\#put\+Data\+Item(\+Put\+Data\+Request, Result\+Callback) 
+\end{DoxySeeAlso}
+\index{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}!put\+Data\+Item\+Synchronous@{put\+Data\+Item\+Synchronous}}
+\index{put\+Data\+Item\+Synchronous@{put\+Data\+Item\+Synchronous}!com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}}
+\subsubsection[{\texorpdfstring{put\+Data\+Item\+Synchronous(\+Put\+Data\+Request request, long timeout\+In\+Millis)}{putDataItemSynchronous(PutDataRequest request, long timeoutInMillis)}}]{\setlength{\rightskip}{0pt plus 5cm}int com.\+google.\+devrel.\+wcl.\+Wear\+Manager.\+put\+Data\+Item\+Synchronous (
+\begin{DoxyParamCaption}
+\item[{Put\+Data\+Request}]{request, }
+\item[{long}]{timeout\+In\+Millis}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a0a1d005ca8c26515d89fe8377feb41c3}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a0a1d005ca8c26515d89fe8377feb41c3}
+Adds a data item {\bfseries synchronously}. This should be called only on non-\/\+UI threads. A
+\begin{DoxyCode}
+timeoutInMillis 
+\end{DoxyCode}
+ is required to specify the maximum length of time, in milliseconds, that the thread should be blocked. \index{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}!put\+Image\+Data@{put\+Image\+Data}}
+\index{put\+Image\+Data@{put\+Image\+Data}!com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}}
+\subsubsection[{\texorpdfstring{put\+Image\+Data(\+Bitmap bitmap, String path, String key, boolean is\+Urgent, boolean add\+Timestamp,"@Nullable Result\+Callback$<$?super Data\+Api.\+Data\+Item\+Result $>$ callback)}{putImageData(Bitmap bitmap, String path, String key, boolean isUrgent, boolean addTimestamp,@Nullable ResultCallback<?super DataApi.DataItemResult > callback)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+Wear\+Manager.\+put\+Image\+Data (
+\begin{DoxyParamCaption}
+\item[{Bitmap}]{bitmap, }
+\item[{String}]{path, }
+\item[{String}]{key, }
+\item[{boolean}]{is\+Urgent, }
+\item[{boolean}]{add\+Timestamp, }
+\item[{@Nullable Result\+Callback$<$?super Data\+Api.\+Data\+Item\+Result $>$}]{callback}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_afe32818d5441719bd637aa569192990c}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_afe32818d5441719bd637aa569192990c}
+Adds a
+\begin{DoxyCode}
+bitmap 
+\end{DoxyCode}
+ image to a data item asynchronously. Caller can specify a \hyperlink{}{Result\+Callback} or pass a
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ ; if a
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ is passed, a default \hyperlink{}{Result\+Callback} will be used (see \hyperlink{}{put\+Data\+Item(\+Put\+Data\+Request, Result\+Callback)} for details).
+
+
+\begin{DoxyParams}{Parameters}
+{\em bitmap} & The bitmap to be added. \\
+\hline
+{\em path} & The path for the data item. \\
+\hline
+{\em key} & The key to be used for this item in the data map. \\
+\hline
+{\em is\+Urgent} & If
+\begin{DoxyCode}
+\textcolor{keyword}{true} 
+\end{DoxyCode}
+ , request will be set as urgent. \\
+\hline
+{\em add\+Timestamp} & If
+\begin{DoxyCode}
+\textcolor{keyword}{true} 
+\end{DoxyCode}
+ , adds a timestamp to the data map to always create a new data item even if an identical data item with the same bitmap has already been added \\
+\hline
+{\em callback} & The callback to be notified of the result (can be
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ ). \\
+\hline
+\end{DoxyParams}
+\index{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}!remove\+Capabilities@{remove\+Capabilities}}
+\index{remove\+Capabilities@{remove\+Capabilities}!com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}}
+\subsubsection[{\texorpdfstring{remove\+Capabilities(\+String...\+capabilities)}{removeCapabilities(String...capabilities)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+Wear\+Manager.\+remove\+Capabilities (
+\begin{DoxyParamCaption}
+\item[{String...}]{capabilities}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a2b109af6823821ac6a98a5647e45a999}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a2b109af6823821ac6a98a5647e45a999}
+Removes one or more capabilities from the client at runtime.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_af4d5cdb42452cbedf04e9983ee97e204}{add\+Capabilities}(String...) 
+\end{DoxySeeAlso}
+\index{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}!remove\+Wear\+Consumer@{remove\+Wear\+Consumer}}
+\index{remove\+Wear\+Consumer@{remove\+Wear\+Consumer}!com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}}
+\subsubsection[{\texorpdfstring{remove\+Wear\+Consumer(\+Wear\+Consumer consumer)}{removeWearConsumer(WearConsumer consumer)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+Wear\+Manager.\+remove\+Wear\+Consumer (
+\begin{DoxyParamCaption}
+\item[{{\bf Wear\+Consumer}}]{consumer}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a473eca98cfa817fb734f7342bc045ce1}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a473eca98cfa817fb734f7342bc045ce1}
+Removes the \hyperlink{}{Wear\+Consumer} from this singleton. This should be when there is no need for the registered \hyperlink{}{Wear\+Consumer} to avoid leaks.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_ab1ead896194d81adf7750d73e146d7d4}{add\+Wear\+Consumer(\+Wear\+Consumer)} 
+\end{DoxySeeAlso}
+\index{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}!send\+Http\+Response@{send\+Http\+Response}}
+\index{send\+Http\+Response@{send\+Http\+Response}!com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}}
+\subsubsection[{\texorpdfstring{send\+Http\+Response("@Nullable String response, int status, String node\+Id, String request\+Id, Result\+Callback$<$?super Message\+Api.\+Send\+Message\+Result $>$ callback)}{sendHttpResponse(@Nullable String response, int status, String nodeId, String requestId, ResultCallback<?super MessageApi.SendMessageResult > callback)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+Wear\+Manager.\+send\+Http\+Response (
+\begin{DoxyParamCaption}
+\item[{@Nullable String}]{response, }
+\item[{int}]{status, }
+\item[{String}]{node\+Id, }
+\item[{String}]{request\+Id, }
+\item[{Result\+Callback$<$?super Message\+Api.\+Send\+Message\+Result $>$}]{callback}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a0bb216530bb18fb38af13e62f839673c}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a0bb216530bb18fb38af13e62f839673c}
+Sends an H\+T\+TP response to a node inside an asynchronous custom message. When a node makes an H\+T\+TP Request using the \hyperlink{}{Wear\+Http\+Helper} class, a node capable of fulfilling that request will be notified if it is registered to \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_abcee1bca516c72b0541eb9c2b775ac07}{Wear\+Consumer\#on\+Wearable\+Http\+Request\+Received(\+String, String, String, String, String, String)} After processing the request, that node can send the results back to the originating node by calling this method and providing the result.
+
+
+\begin{DoxyParams}{Parameters}
+{\em response} & The response to be sent back to the originator of the request; it can be 
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ \\
+\hline
+{\em status} & The status of the response \\
+\hline
+{\em node\+Id} & The node\+Id of the originator; this can be obtained from the callback that made the http request \\
+\hline
+{\em request\+Id} & A unique identifier that was received from the original callback that made the http request \\
+\hline
+{\em callback} & A callback to receive the result. If
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ , a default callback will be used, see \hyperlink{}{send\+Message(\+String, String, byte\mbox{[}$\,$\mbox{]}, Result\+Callback)} \\
+\hline
+\end{DoxyParams}
+\index{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}!send\+Message@{send\+Message}}
+\index{send\+Message@{send\+Message}!com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}}
+\subsubsection[{\texorpdfstring{send\+Message(\+String node\+Id, String path,"@Nullable Data\+Map data\+Map,"@Nullable Result\+Callback$<$?super Message\+Api.\+Send\+Message\+Result $>$ callback)}{sendMessage(String nodeId, String path,@Nullable DataMap dataMap,@Nullable ResultCallback<?super MessageApi.SendMessageResult > callback)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+Wear\+Manager.\+send\+Message (
+\begin{DoxyParamCaption}
+\item[{String}]{node\+Id, }
+\item[{String}]{path, }
+\item[{@Nullable Data\+Map}]{data\+Map, }
+\item[{@Nullable Result\+Callback$<$?super Message\+Api.\+Send\+Message\+Result $>$}]{callback}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_aaf40fd61737e8c52d95d593c85785aa7}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_aaf40fd61737e8c52d95d593c85785aa7}
+Sends an asynchronous message to the node with the given
+\begin{DoxyCode}
+nodeId 
+\end{DoxyCode}
+ . If the 
+\begin{DoxyCode}
+callback 
+\end{DoxyCode}
+ is null, then a default callback will be used that provides a feedback to the caller using the \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a7de9151e0c9d78734ddf2fab0a0bc6c8}{Wear\+Consumer\#on\+Wearable\+Send\+Message\+Result}, in which case, the status of the result will be made available. Callers may decide to provide their own 
+\begin{DoxyCode}
+callback 
+\end{DoxyCode}
+ to be used instead. This variant receives the message in a \hyperlink{}{Data\+Map}. \index{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}!send\+Message@{send\+Message}}
+\index{send\+Message@{send\+Message}!com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}}
+\subsubsection[{\texorpdfstring{send\+Message(\+String node\+Id, String path,"@Nullable byte[] bytes,"@Nullable final Result\+Callback$<$?super Message\+Api.\+Send\+Message\+Result $>$ callback)}{sendMessage(String nodeId, String path,@Nullable byte[] bytes,@Nullable final ResultCallback<?super MessageApi.SendMessageResult > callback)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+Wear\+Manager.\+send\+Message (
+\begin{DoxyParamCaption}
+\item[{String}]{node\+Id, }
+\item[{String}]{path, }
+\item[{@Nullable byte\mbox{[}$\,$\mbox{]}}]{bytes, }
+\item[{@Nullable final Result\+Callback$<$?super Message\+Api.\+Send\+Message\+Result $>$}]{callback}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_aeb657bce26a4e7aca54627b51e550e87}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_aeb657bce26a4e7aca54627b51e550e87}
+Sends an asynchronous message to the node with the given
+\begin{DoxyCode}
+nodeId 
+\end{DoxyCode}
+ . If the 
+\begin{DoxyCode}
+callback 
+\end{DoxyCode}
+ is null, then a default callback will be used that provides a feedback to the caller using the \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a7de9151e0c9d78734ddf2fab0a0bc6c8}{Wear\+Consumer\#on\+Wearable\+Send\+Message\+Result}, in which case, the status of the result will be made available. Callers may decide to provide their own 
+\begin{DoxyCode}
+callback 
+\end{DoxyCode}
+ to be used instead. This variant receives the message in an array of bytes. \index{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}!send\+Message@{send\+Message}}
+\index{send\+Message@{send\+Message}!com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}}
+\subsubsection[{\texorpdfstring{send\+Message(\+String node\+Id, String path,"@Nullable byte[] bytes)}{sendMessage(String nodeId, String path,@Nullable byte[] bytes)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+Wear\+Manager.\+send\+Message (
+\begin{DoxyParamCaption}
+\item[{String}]{node\+Id, }
+\item[{String}]{path, }
+\item[{@Nullable byte\mbox{[}$\,$\mbox{]}}]{bytes}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a00d603c9084c1a4870252d31f352910f}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a00d603c9084c1a4870252d31f352910f}
+Sends an asynchronous message to the node with the given
+\begin{DoxyCode}
+nodeId 
+\end{DoxyCode}
+ . A default callback will be used that provides a feedback to the caller using the \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a7de9151e0c9d78734ddf2fab0a0bc6c8}{Wear\+Consumer\#on\+Wearable\+Send\+Message\+Result} where the status of the result will be made available. To provide your own callback, use \hyperlink{}{send\+Message(\+String, String, byte\mbox{[}$\,$\mbox{]}, Result\+Callback)}.
+
+\begin{DoxySeeAlso}{See also}
+Wear\+Manager\+::send\+Message(\+String, String, byte\mbox{[}$\,$\mbox{]}, Result\+Callback) 
+\end{DoxySeeAlso}
+\index{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}!show\+Wearable\+List@{show\+Wearable\+List}}
+\index{show\+Wearable\+List@{show\+Wearable\+List}!com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}}
+\subsubsection[{\texorpdfstring{show\+Wearable\+List(\+Activity activity, Wearable\+List\+Config config)}{showWearableList(Activity activity, WearableListConfig config)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+Wear\+Manager.\+show\+Wearable\+List (
+\begin{DoxyParamCaption}
+\item[{Activity}]{activity, }
+\item[{{\bf Wearable\+List\+Config}}]{config}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a446c9ae3e23609bc16d87e4ece91ed72}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a446c9ae3e23609bc16d87e4ece91ed72}
+Start an internal activity that presents a \hyperlink{}{android.\+support.\+wearable.\+view.\+Wearable\+List\+View}. A \hyperlink{}{Wearable\+List\+Config} is used to pass the configuration parameters for the list. When a selection is made, the activity will be closed and users can capture the result by implementing \hyperlink{}{Activity\#on\+Activity\+Result(int, int, Intent)}.
+
+\begin{DoxySeeAlso}{See also}
+Wearable\+List\+Config 
+\end{DoxySeeAlso}
+\index{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}!stop\+Wearable\+Service@{stop\+Wearable\+Service}}
+\index{stop\+Wearable\+Service@{stop\+Wearable\+Service}!com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager@{com\+::google\+::devrel\+::wcl\+::\+Wear\+Manager}}
+\subsubsection[{\texorpdfstring{stop\+Wearable\+Service()}{stopWearableService()}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+Wear\+Manager.\+stop\+Wearable\+Service (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_ab1fac2df063290c71ac555851a5066c6}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_ab1fac2df063290c71ac555851a5066c6}
+Stops the \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WclWearableListenerService}{Wcl\+Wearable\+Listener\+Service}. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Wearable\+Project\+\_\+\+Complete/\+Wear\+Companion\+Library/\+W\+C\+L/src/main/java/com/google/devrel/wcl/Wear\+Manager.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,85 @@
+\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1filters_1_1SingleNodeFilter}{}\section{com.\+google.\+devrel.\+wcl.\+filters.\+Single\+Node\+Filter Class Reference}
+\label{classcom_1_1google_1_1devrel_1_1wcl_1_1filters_1_1SingleNodeFilter}\index{com.\+google.\+devrel.\+wcl.\+filters.\+Single\+Node\+Filter@{com.\+google.\+devrel.\+wcl.\+filters.\+Single\+Node\+Filter}}
+
+
+Inheritance diagram for com.\+google.\+devrel.\+wcl.\+filters.\+Single\+Node\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{df/d3c/classcom_1_1google_1_1devrel_1_1wcl_1_1filters_1_1SingleNodeFilter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+google.\+devrel.\+wcl.\+filters.\+Single\+Node\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{d7/daa/classcom_1_1google_1_1devrel_1_1wcl_1_1filters_1_1SingleNodeFilter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1filters_1_1SingleNodeFilter_a66d8bc70e29fe674e0f6030d2419281c}{Single\+Node\+Filter} (@Nullable \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1filters_1_1NodeSelectionFilter}{Node\+Selection\+Filter} delegate)
+\item 
+\hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1filters_1_1SingleNodeFilter_a80572ec2194bd5b7d1a7c76ad6ae01a2}{Single\+Node\+Filter} ()
+\item 
+Set$<$ Node $>$ {\bfseries filter\+Nodes} (Set$<$ Node $>$ nodes)\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1filters_1_1SingleNodeFilter_a62c4faedd0e963a62a48838d0a4b5a95}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1filters_1_1SingleNodeFilter_a62c4faedd0e963a62a48838d0a4b5a95}
+
+\item 
+String {\bfseries describe} ()\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1filters_1_1SingleNodeFilter_a28b67b1962e3d83f075ce159d10706c8}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1filters_1_1SingleNodeFilter_a28b67b1962e3d83f075ce159d10706c8}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An implementation of \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1filters_1_1NodeSelectionFilter}{Node\+Selection\+Filter} which allows narrowing down a list of nodes to at most one node. Clients can use this filter through a pattern such as\+: 
+\begin{DoxyPre}
+    new SingleNodeFilter(aNodeSelectionFilter).filterNodes(nodes)
+\end{DoxyPre}
+ If \char`\"{}a\+Node\+Selection\+Filter\char`\"{} is non-\/null, then the above pattern first applies a\+Node\+Selection\+Filter to the set of
+\begin{DoxyCode}
+nodes 
+\end{DoxyCode}
+ and then a single node from the result is picked and returned. if \char`\"{}a\+Node\+Selection\+Filter\char`\"{} is
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ , a single node from the original set of
+\begin{DoxyCode}
+nodes 
+\end{DoxyCode}
+ will be selected. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{com\+::google\+::devrel\+::wcl\+::filters\+::\+Single\+Node\+Filter@{com\+::google\+::devrel\+::wcl\+::filters\+::\+Single\+Node\+Filter}!Single\+Node\+Filter@{Single\+Node\+Filter}}
+\index{Single\+Node\+Filter@{Single\+Node\+Filter}!com\+::google\+::devrel\+::wcl\+::filters\+::\+Single\+Node\+Filter@{com\+::google\+::devrel\+::wcl\+::filters\+::\+Single\+Node\+Filter}}
+\subsubsection[{\texorpdfstring{Single\+Node\+Filter("@Nullable Node\+Selection\+Filter delegate)}{SingleNodeFilter(@Nullable NodeSelectionFilter delegate)}}]{\setlength{\rightskip}{0pt plus 5cm}com.\+google.\+devrel.\+wcl.\+filters.\+Single\+Node\+Filter.\+Single\+Node\+Filter (
+\begin{DoxyParamCaption}
+\item[{@Nullable {\bf Node\+Selection\+Filter}}]{delegate}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1filters_1_1SingleNodeFilter_a66d8bc70e29fe674e0f6030d2419281c}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1filters_1_1SingleNodeFilter_a66d8bc70e29fe674e0f6030d2419281c}
+A node filter which selects at most one node from the set nodes passed to it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em delegate} & a filter to apply before picking the node, or
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ if all nodes should be considered. \\
+\hline
+\end{DoxyParams}
+\index{com\+::google\+::devrel\+::wcl\+::filters\+::\+Single\+Node\+Filter@{com\+::google\+::devrel\+::wcl\+::filters\+::\+Single\+Node\+Filter}!Single\+Node\+Filter@{Single\+Node\+Filter}}
+\index{Single\+Node\+Filter@{Single\+Node\+Filter}!com\+::google\+::devrel\+::wcl\+::filters\+::\+Single\+Node\+Filter@{com\+::google\+::devrel\+::wcl\+::filters\+::\+Single\+Node\+Filter}}
+\subsubsection[{\texorpdfstring{Single\+Node\+Filter()}{SingleNodeFilter()}}]{\setlength{\rightskip}{0pt plus 5cm}com.\+google.\+devrel.\+wcl.\+filters.\+Single\+Node\+Filter.\+Single\+Node\+Filter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1filters_1_1SingleNodeFilter_a80572ec2194bd5b7d1a7c76ad6ae01a2}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1filters_1_1SingleNodeFilter_a80572ec2194bd5b7d1a7c76ad6ae01a2}
+A node filter which selects at most one node from the set nodes passed to it. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Wearable\+Project\+\_\+\+Complete/\+Wear\+Companion\+Library/\+W\+C\+L/src/main/java/com/google/devrel/wcl/filters/Single\+Node\+Filter.\+java\end{DoxyCompactItemize}

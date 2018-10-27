@@ -1,0 +1,529 @@
+\hypertarget{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer}{}\section{com.\+google.\+devrel.\+wcl.\+callbacks.\+Wear\+Consumer Interface Reference}
+\label{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer}\index{com.\+google.\+devrel.\+wcl.\+callbacks.\+Wear\+Consumer@{com.\+google.\+devrel.\+wcl.\+callbacks.\+Wear\+Consumer}}
+
+
+Inheritance diagram for com.\+google.\+devrel.\+wcl.\+callbacks.\+Wear\+Consumer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d4b/interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+google.\+devrel.\+wcl.\+callbacks.\+Wear\+Consumer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/df2/interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a87f6e50e4a86c5a931e8ffee025deea2}{on\+Wearable\+Add\+Capability\+Result} (int status\+Code)
+\item 
+void \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a7dd2a5c97d7fc8b489258c911523fa72}{on\+Wearable\+Remove\+Capability\+Result} (int status\+Code)
+\item 
+void \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a01ca74cab966f7b000a6acce026d7b86}{on\+Wearable\+Capability\+Changed} (String capability, Set$<$ Node $>$ nodes)
+\item 
+void \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a767af54293eda1e2a66459c05c48f554}{on\+Wearable\+Initial\+Connected\+Capabilities\+Received} ()
+\item 
+void \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a7de9151e0c9d78734ddf2fab0a0bc6c8}{on\+Wearable\+Send\+Message\+Result} (int status\+Code)
+\item 
+void \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a2b91f7080cad43d053d6e942c521e943}{on\+Wearable\+Message\+Received} (Message\+Event message\+Event)
+\item 
+void \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a69a456c1730b9b26fc9e651e03056248}{on\+Wearable\+Api\+Connected} ()
+\item 
+void \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_ae3fa58c5cfc736550a60f799e1174394}{on\+Wearable\+Api\+Connection\+Suspended} ()
+\item 
+void \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a4dc69bcb5554589c91c70683b75243fe}{on\+Wearable\+Api\+Connection\+Failed} ()
+\item 
+void \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a0facaeb65075a01fdd4c7e1049d53cf9}{on\+Wearable\+Application\+Launch\+Request\+Received} (Bundle bundle, boolean relaunch\+If\+Running)
+\item 
+void \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_abcee1bca516c72b0541eb9c2b775ac07}{on\+Wearable\+Http\+Request\+Received} (String url, String method, String query, String charset, String node\+Id, String request\+Id)
+\item 
+void \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a90f1b1cb54bdb294e6a3340ee639e65d}{on\+Wearable\+Channel\+Closed} (Channel channel, int close\+Reason, int app\+Specific\+Error\+Code)
+\item 
+void \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a210448ac702228356989bddbe455db83}{on\+Wearable\+Input\+Closed} (Channel channel, int close\+Reason, int app\+Specific\+Error\+Code)
+\item 
+void \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a5dde314a04956ef35c4d079f426bf6db}{on\+Wearable\+Output\+Closed} (Channel channel, int close\+Reason, int app\+Specific\+Error\+Code)
+\item 
+void \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_ad07572b94c1490e1887108b2d25699cd}{on\+Wearable\+Data\+Changed} (Data\+Event\+Buffer data\+Events)
+\item 
+void \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a498f9d975109c588404b9c8855634aff}{on\+Wearable\+Connected\+Nodes} (List$<$ Node $>$ connected\+Nodes)
+\item 
+void \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a90049f8a5821e154dfc0f17dd279e0ef}{on\+Wearable\+Initial\+Connected\+Nodes\+Received} ()
+\item 
+void \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a52da85e8d5431169bc17b31d241c55ed}{on\+Wearable\+Peer\+Disconnected} (Node peer)
+\item 
+void \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a2607a0a046ea996f4505e12e8f1c8ef1}{on\+Wearable\+Peer\+Connected} (Node peer)
+\item 
+void \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a39149dc277ecb6ed75e3a5214a61f97a}{on\+Wearable\+Send\+Data\+Result} (int status\+Code)
+\item 
+void \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_ae60f2b14534d4ff65b553ef98c3a4c2b}{on\+Wearable\+Get\+Data\+Items} (int status\+Code, Data\+Item\+Buffer data\+Item\+Buffer)
+\item 
+void \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_af3fc892221b8bc9cde08377850f111a5}{on\+Wearable\+Get\+Data\+Item} (int status\+Code, Data\+Api.\+Data\+Item\+Result data\+Item\+Result)
+\item 
+void \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_aa583d2bbacb7eca35ae83488fbc32f62}{on\+Wearable\+Delete\+Data\+Items\+Result} (int status\+Code)
+\item 
+void \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_ab3785816c06c30602573a978fd869da8}{on\+Wearable\+Input\+Stream\+For\+Channel\+Opened} (int status\+Code, String request\+Id, Channel channel, Input\+Stream input\+Stream)
+\item 
+void \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a6c975822ee9bce8a0294b8f1ca1ae838}{on\+Wearable\+Send\+File\+Result} (int status\+Code, String request\+Id)
+\item 
+void \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a4c9198d346b1914ff20b5291aceb2957}{on\+Wearable\+Channel\+Opened} (Channel channel)
+\item 
+void \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a5dbc5ac2372eb9f0833ae5ebfb0a2c9c}{on\+Wearable\+File\+Received\+Result} (int status\+Code, String request\+Id, File saved\+File, String original\+Name)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An interface that is used by the library to inform application clients of changes in the state or data. It is recommended that the clients extend the no-\/op implementation \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1AbstractWearConsumer}{Abstract\+Wear\+Consumer} of this interface and override only the desired subset of callbacks. Clients register their implementation of this interface by calling \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_ab1ead896194d81adf7750d73e146d7d4}{Wear\+Manager\#add\+Wear\+Consumer(\+Wear\+Consumer)} and should remember to unregister by calling \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a473eca98cfa817fb734f7342bc045ce1}{Wear\+Manager\#remove\+Wear\+Consumer(\+Wear\+Consumer)} to avoid any leaks. 
+
+\subsection{Member Function Documentation}
+\index{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}!on\+Wearable\+Add\+Capability\+Result@{on\+Wearable\+Add\+Capability\+Result}}
+\index{on\+Wearable\+Add\+Capability\+Result@{on\+Wearable\+Add\+Capability\+Result}!com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}}
+\subsubsection[{\texorpdfstring{on\+Wearable\+Add\+Capability\+Result(int status\+Code)}{onWearableAddCapabilityResult(int statusCode)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+callbacks.\+Wear\+Consumer.\+on\+Wearable\+Add\+Capability\+Result (
+\begin{DoxyParamCaption}
+\item[{int}]{status\+Code}
+\end{DoxyParamCaption}
+)}\hypertarget{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a87f6e50e4a86c5a931e8ffee025deea2}{}\label{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a87f6e50e4a86c5a931e8ffee025deea2}
+Called when the result of \hyperlink{}{Wear\+Manager\#add\+Capabilities(\+String...)} is available.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status\+Code} & The status code of the result \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1AbstractWearConsumer_acda47e857020f6088b139af51e2a261a}{com.\+google.\+devrel.\+wcl.\+callbacks.\+Abstract\+Wear\+Consumer}.
+
+\index{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}!on\+Wearable\+Api\+Connected@{on\+Wearable\+Api\+Connected}}
+\index{on\+Wearable\+Api\+Connected@{on\+Wearable\+Api\+Connected}!com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}}
+\subsubsection[{\texorpdfstring{on\+Wearable\+Api\+Connected()}{onWearableApiConnected()}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+callbacks.\+Wear\+Consumer.\+on\+Wearable\+Api\+Connected (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a69a456c1730b9b26fc9e651e03056248}{}\label{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a69a456c1730b9b26fc9e651e03056248}
+Called when the Google Api Client for Wearable A\+P\+Is is connected. It is guaranteed that this method is called even if the connectivity is established prior to registration of the listener. 
+
+Implemented in \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1AbstractWearConsumer_a6138a4cc2fcd834f3a00136c276af684}{com.\+google.\+devrel.\+wcl.\+callbacks.\+Abstract\+Wear\+Consumer}.
+
+\index{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}!on\+Wearable\+Api\+Connection\+Failed@{on\+Wearable\+Api\+Connection\+Failed}}
+\index{on\+Wearable\+Api\+Connection\+Failed@{on\+Wearable\+Api\+Connection\+Failed}!com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}}
+\subsubsection[{\texorpdfstring{on\+Wearable\+Api\+Connection\+Failed()}{onWearableApiConnectionFailed()}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+callbacks.\+Wear\+Consumer.\+on\+Wearable\+Api\+Connection\+Failed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a4dc69bcb5554589c91c70683b75243fe}{}\label{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a4dc69bcb5554589c91c70683b75243fe}
+Called when the connection to the Google Api Client for Wearable A\+P\+Is fails. 
+
+Implemented in \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1AbstractWearConsumer_ac30fdfaa5c52d15faf2fa84ab8bde2ea}{com.\+google.\+devrel.\+wcl.\+callbacks.\+Abstract\+Wear\+Consumer}.
+
+\index{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}!on\+Wearable\+Api\+Connection\+Suspended@{on\+Wearable\+Api\+Connection\+Suspended}}
+\index{on\+Wearable\+Api\+Connection\+Suspended@{on\+Wearable\+Api\+Connection\+Suspended}!com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}}
+\subsubsection[{\texorpdfstring{on\+Wearable\+Api\+Connection\+Suspended()}{onWearableApiConnectionSuspended()}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+callbacks.\+Wear\+Consumer.\+on\+Wearable\+Api\+Connection\+Suspended (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_ae3fa58c5cfc736550a60f799e1174394}{}\label{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_ae3fa58c5cfc736550a60f799e1174394}
+Called when the connection to the Google Api Client for Wearable A\+P\+Is is suspended. 
+
+Implemented in \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1AbstractWearConsumer_a40173bb3f8b148fc7366ad3759ace271}{com.\+google.\+devrel.\+wcl.\+callbacks.\+Abstract\+Wear\+Consumer}.
+
+\index{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}!on\+Wearable\+Application\+Launch\+Request\+Received@{on\+Wearable\+Application\+Launch\+Request\+Received}}
+\index{on\+Wearable\+Application\+Launch\+Request\+Received@{on\+Wearable\+Application\+Launch\+Request\+Received}!com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}}
+\subsubsection[{\texorpdfstring{on\+Wearable\+Application\+Launch\+Request\+Received(\+Bundle bundle, boolean relaunch\+If\+Running)}{onWearableApplicationLaunchRequestReceived(Bundle bundle, boolean relaunchIfRunning)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+callbacks.\+Wear\+Consumer.\+on\+Wearable\+Application\+Launch\+Request\+Received (
+\begin{DoxyParamCaption}
+\item[{Bundle}]{bundle, }
+\item[{boolean}]{relaunch\+If\+Running}
+\end{DoxyParamCaption}
+)}\hypertarget{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a0facaeb65075a01fdd4c7e1049d53cf9}{}\label{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a0facaeb65075a01fdd4c7e1049d53cf9}
+Called when a request for launching the app is received by a node but no activity name is provided. The request is made from another node by calling \hyperlink{}{Wear\+Manager\#launch\+App\+On\+Nodes(\+String, Bundle, boolean, String, Node\+Selection\+Filter)} and passing
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ for the
+\begin{DoxyCode}
+activityName 
+\end{DoxyCode}
+ in this call. Then the node that receives this callback needs to launch the app. 
+
+Implemented in \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1AbstractWearConsumer_a59cee3b7805b7f6d3ed149fad6acfb94}{com.\+google.\+devrel.\+wcl.\+callbacks.\+Abstract\+Wear\+Consumer}.
+
+\index{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}!on\+Wearable\+Capability\+Changed@{on\+Wearable\+Capability\+Changed}}
+\index{on\+Wearable\+Capability\+Changed@{on\+Wearable\+Capability\+Changed}!com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}}
+\subsubsection[{\texorpdfstring{on\+Wearable\+Capability\+Changed(\+String capability, Set$<$ Node $>$ nodes)}{onWearableCapabilityChanged(String capability, Set< Node > nodes)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+callbacks.\+Wear\+Consumer.\+on\+Wearable\+Capability\+Changed (
+\begin{DoxyParamCaption}
+\item[{String}]{capability, }
+\item[{Set$<$ Node $>$}]{nodes}
+\end{DoxyParamCaption}
+)}\hypertarget{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a01ca74cab966f7b000a6acce026d7b86}{}\label{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a01ca74cab966f7b000a6acce026d7b86}
+Called when framework reports a change in the capabilities.
+
+
+\begin{DoxyParams}{Parameters}
+{\em capability} & The capability that has changed. \\
+\hline
+{\em nodes} & The new set of nodes for the given capability. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1AbstractWearConsumer_a5dec2ea6ca63dfaaf4acffe396f61269}{com.\+google.\+devrel.\+wcl.\+callbacks.\+Abstract\+Wear\+Consumer}.
+
+\index{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}!on\+Wearable\+Channel\+Closed@{on\+Wearable\+Channel\+Closed}}
+\index{on\+Wearable\+Channel\+Closed@{on\+Wearable\+Channel\+Closed}!com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}}
+\subsubsection[{\texorpdfstring{on\+Wearable\+Channel\+Closed(\+Channel channel, int close\+Reason, int app\+Specific\+Error\+Code)}{onWearableChannelClosed(Channel channel, int closeReason, int appSpecificErrorCode)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+callbacks.\+Wear\+Consumer.\+on\+Wearable\+Channel\+Closed (
+\begin{DoxyParamCaption}
+\item[{Channel}]{channel, }
+\item[{int}]{close\+Reason, }
+\item[{int}]{app\+Specific\+Error\+Code}
+\end{DoxyParamCaption}
+)}\hypertarget{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a90f1b1cb54bdb294e6a3340ee639e65d}{}\label{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a90f1b1cb54bdb294e6a3340ee639e65d}
+Called when a channel is closed. 
+
+Implemented in \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1AbstractWearConsumer_a9987882f6682f4656059d5dc4609c872}{com.\+google.\+devrel.\+wcl.\+callbacks.\+Abstract\+Wear\+Consumer}.
+
+\index{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}!on\+Wearable\+Channel\+Opened@{on\+Wearable\+Channel\+Opened}}
+\index{on\+Wearable\+Channel\+Opened@{on\+Wearable\+Channel\+Opened}!com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}}
+\subsubsection[{\texorpdfstring{on\+Wearable\+Channel\+Opened(\+Channel channel)}{onWearableChannelOpened(Channel channel)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+callbacks.\+Wear\+Consumer.\+on\+Wearable\+Channel\+Opened (
+\begin{DoxyParamCaption}
+\item[{Channel}]{channel}
+\end{DoxyParamCaption}
+)}\hypertarget{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a4c9198d346b1914ff20b5291aceb2957}{}\label{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a4c9198d346b1914ff20b5291aceb2957}
+Called when a \hyperlink{}{Channel} is opened. 
+
+Implemented in \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1AbstractWearConsumer_a1c856eec63e10f6626710c5f20e28293}{com.\+google.\+devrel.\+wcl.\+callbacks.\+Abstract\+Wear\+Consumer}.
+
+\index{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}!on\+Wearable\+Connected\+Nodes@{on\+Wearable\+Connected\+Nodes}}
+\index{on\+Wearable\+Connected\+Nodes@{on\+Wearable\+Connected\+Nodes}!com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}}
+\subsubsection[{\texorpdfstring{on\+Wearable\+Connected\+Nodes(\+List$<$ Node $>$ connected\+Nodes)}{onWearableConnectedNodes(List< Node > connectedNodes)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+callbacks.\+Wear\+Consumer.\+on\+Wearable\+Connected\+Nodes (
+\begin{DoxyParamCaption}
+\item[{List$<$ Node $>$}]{connected\+Nodes}
+\end{DoxyParamCaption}
+)}\hypertarget{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a498f9d975109c588404b9c8855634aff}{}\label{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a498f9d975109c588404b9c8855634aff}
+Called when the list of connected nodes changes. 
+
+Implemented in \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1AbstractWearConsumer_a86518dfa4a09ec45143a6d2b745e410c}{com.\+google.\+devrel.\+wcl.\+callbacks.\+Abstract\+Wear\+Consumer}.
+
+\index{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}!on\+Wearable\+Data\+Changed@{on\+Wearable\+Data\+Changed}}
+\index{on\+Wearable\+Data\+Changed@{on\+Wearable\+Data\+Changed}!com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}}
+\subsubsection[{\texorpdfstring{on\+Wearable\+Data\+Changed(\+Data\+Event\+Buffer data\+Events)}{onWearableDataChanged(DataEventBuffer dataEvents)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+callbacks.\+Wear\+Consumer.\+on\+Wearable\+Data\+Changed (
+\begin{DoxyParamCaption}
+\item[{Data\+Event\+Buffer}]{data\+Events}
+\end{DoxyParamCaption}
+)}\hypertarget{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_ad07572b94c1490e1887108b2d25699cd}{}\label{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_ad07572b94c1490e1887108b2d25699cd}
+Called when Data layer reports a change in the stored data. 
+
+Implemented in \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1AbstractWearConsumer_ab2c399f4d68a357d06ebd2bc3adc393d}{com.\+google.\+devrel.\+wcl.\+callbacks.\+Abstract\+Wear\+Consumer}.
+
+\index{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}!on\+Wearable\+Delete\+Data\+Items\+Result@{on\+Wearable\+Delete\+Data\+Items\+Result}}
+\index{on\+Wearable\+Delete\+Data\+Items\+Result@{on\+Wearable\+Delete\+Data\+Items\+Result}!com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}}
+\subsubsection[{\texorpdfstring{on\+Wearable\+Delete\+Data\+Items\+Result(int status\+Code)}{onWearableDeleteDataItemsResult(int statusCode)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+callbacks.\+Wear\+Consumer.\+on\+Wearable\+Delete\+Data\+Items\+Result (
+\begin{DoxyParamCaption}
+\item[{int}]{status\+Code}
+\end{DoxyParamCaption}
+)}\hypertarget{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_aa583d2bbacb7eca35ae83488fbc32f62}{}\label{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_aa583d2bbacb7eca35ae83488fbc32f62}
+Called when the result of \hyperlink{}{Wear\+Manager\#delete\+Data\+Items(\+Uri, Result\+Callback)} is available.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status\+Code} & The status code of the result \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1AbstractWearConsumer_a06ef5899c442c2404f924e291a3427de}{com.\+google.\+devrel.\+wcl.\+callbacks.\+Abstract\+Wear\+Consumer}.
+
+\index{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}!on\+Wearable\+File\+Received\+Result@{on\+Wearable\+File\+Received\+Result}}
+\index{on\+Wearable\+File\+Received\+Result@{on\+Wearable\+File\+Received\+Result}!com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}}
+\subsubsection[{\texorpdfstring{on\+Wearable\+File\+Received\+Result(int status\+Code, String request\+Id, File saved\+File, String original\+Name)}{onWearableFileReceivedResult(int statusCode, String requestId, File savedFile, String originalName)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+callbacks.\+Wear\+Consumer.\+on\+Wearable\+File\+Received\+Result (
+\begin{DoxyParamCaption}
+\item[{int}]{status\+Code, }
+\item[{String}]{request\+Id, }
+\item[{File}]{saved\+File, }
+\item[{String}]{original\+Name}
+\end{DoxyParamCaption}
+)}\hypertarget{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a5dbc5ac2372eb9f0833ae5ebfb0a2c9c}{}\label{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a5dbc5ac2372eb9f0833ae5ebfb0a2c9c}
+Called when a node has the result of receiving a file transfer. The sender client has used \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearFileTransfer_abdabe46833a251759e295e4de2cc3c95}{Wear\+File\+Transfer\#start\+Transfer()} to send a file and the library handles the logistics of this transfer but on the receiving end, the client can register for this callback to be notified when the transfer is completed, even if unsuccessful.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status\+Code} & The status code corresponding to the attempt to transfer a file. Successful operation will be identified by \hyperlink{}{com.\+google.\+android.\+gms.\+wearable.\+Wearable\+Status\+Codes\#\+S\+U\+C\+C\+E\+SS} \\
+\hline
+{\em request\+Id} & The unique id for this operation. \\
+\hline
+{\em saved\+File} & The \hyperlink{}{File} object pointing to the file that has been transferred. \\
+\hline
+{\em original\+Name} & The original name of the ile that was sent from the sender node. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1AbstractWearConsumer_a941f9f616a07c8563cba64818aa7e6f1}{com.\+google.\+devrel.\+wcl.\+callbacks.\+Abstract\+Wear\+Consumer}.
+
+\index{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}!on\+Wearable\+Get\+Data\+Item@{on\+Wearable\+Get\+Data\+Item}}
+\index{on\+Wearable\+Get\+Data\+Item@{on\+Wearable\+Get\+Data\+Item}!com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}}
+\subsubsection[{\texorpdfstring{on\+Wearable\+Get\+Data\+Item(int status\+Code, Data\+Api.\+Data\+Item\+Result data\+Item\+Result)}{onWearableGetDataItem(int statusCode, DataApi.DataItemResult dataItemResult)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+callbacks.\+Wear\+Consumer.\+on\+Wearable\+Get\+Data\+Item (
+\begin{DoxyParamCaption}
+\item[{int}]{status\+Code, }
+\item[{Data\+Api.\+Data\+Item\+Result}]{data\+Item\+Result}
+\end{DoxyParamCaption}
+)}\hypertarget{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_af3fc892221b8bc9cde08377850f111a5}{}\label{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_af3fc892221b8bc9cde08377850f111a5}
+Called when the result of \hyperlink{}{Wear\+Manager\#get\+Data\+Item(\+Uri, Result\+Callback)} is available.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status\+Code} & The status code of the result \\
+\hline
+{\em data\+Item\+Result} & The data items received \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1AbstractWearConsumer_a75d7a8e2069a8f254ee7301f9a8db248}{com.\+google.\+devrel.\+wcl.\+callbacks.\+Abstract\+Wear\+Consumer}.
+
+\index{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}!on\+Wearable\+Get\+Data\+Items@{on\+Wearable\+Get\+Data\+Items}}
+\index{on\+Wearable\+Get\+Data\+Items@{on\+Wearable\+Get\+Data\+Items}!com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}}
+\subsubsection[{\texorpdfstring{on\+Wearable\+Get\+Data\+Items(int status\+Code, Data\+Item\+Buffer data\+Item\+Buffer)}{onWearableGetDataItems(int statusCode, DataItemBuffer dataItemBuffer)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+callbacks.\+Wear\+Consumer.\+on\+Wearable\+Get\+Data\+Items (
+\begin{DoxyParamCaption}
+\item[{int}]{status\+Code, }
+\item[{Data\+Item\+Buffer}]{data\+Item\+Buffer}
+\end{DoxyParamCaption}
+)}\hypertarget{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_ae60f2b14534d4ff65b553ef98c3a4c2b}{}\label{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_ae60f2b14534d4ff65b553ef98c3a4c2b}
+Called when the result of \hyperlink{}{Wear\+Manager\#get\+Data\+Items(\+Result\+Callback)} is available.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status\+Code} & The status code of the result \\
+\hline
+{\em data\+Item\+Buffer} & The data items received \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1AbstractWearConsumer_ab649cb01d5b31860ea034e0e540917e2}{com.\+google.\+devrel.\+wcl.\+callbacks.\+Abstract\+Wear\+Consumer}.
+
+\index{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}!on\+Wearable\+Http\+Request\+Received@{on\+Wearable\+Http\+Request\+Received}}
+\index{on\+Wearable\+Http\+Request\+Received@{on\+Wearable\+Http\+Request\+Received}!com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}}
+\subsubsection[{\texorpdfstring{on\+Wearable\+Http\+Request\+Received(\+String url, String method, String query, String charset, String node\+Id, String request\+Id)}{onWearableHttpRequestReceived(String url, String method, String query, String charset, String nodeId, String requestId)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+callbacks.\+Wear\+Consumer.\+on\+Wearable\+Http\+Request\+Received (
+\begin{DoxyParamCaption}
+\item[{String}]{url, }
+\item[{String}]{method, }
+\item[{String}]{query, }
+\item[{String}]{charset, }
+\item[{String}]{node\+Id, }
+\item[{String}]{request\+Id}
+\end{DoxyParamCaption}
+)}\hypertarget{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_abcee1bca516c72b0541eb9c2b775ac07}{}\label{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_abcee1bca516c72b0541eb9c2b775ac07}
+Called when a request to perform an H\+T\+TP call is received by this node. When the request is made and the response is ready, this node should send back the result by calling \hyperlink{}{Wear\+Manager\#send\+Http\+Response(\+String, int, String, String, Result\+Callback)} so that the library can route the response to the correct caller.
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The url for the request. If the request is of type G\+ET, then url may include query parameters. \\
+\hline
+{\em method} & The H\+T\+TP method; only \hyperlink{}{Wear\+Http\+Helper\#\+M\+E\+T\+H\+O\+D\+\_\+\+G\+ET} and \hyperlink{}{Wear\+Http\+Helper\#\+M\+E\+T\+H\+O\+D\+\_\+\+P\+O\+ST} are supported. \\
+\hline
+{\em query} & For P\+O\+ST request, the query parameters are included here. \\
+\hline
+{\em charset} & The Charset of the request \\
+\hline
+{\em node\+Id} & The node\+Id of the node that has sent the request. This is needed when the response is sent back for correct routing. \\
+\hline
+{\em request\+Id} & A unique id associated with this request; it is required when sending back the response. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1AbstractWearConsumer_a1613a2f3c71e8c42e633c0b62178b935}{com.\+google.\+devrel.\+wcl.\+callbacks.\+Abstract\+Wear\+Consumer}.
+
+\index{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}!on\+Wearable\+Initial\+Connected\+Capabilities\+Received@{on\+Wearable\+Initial\+Connected\+Capabilities\+Received}}
+\index{on\+Wearable\+Initial\+Connected\+Capabilities\+Received@{on\+Wearable\+Initial\+Connected\+Capabilities\+Received}!com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}}
+\subsubsection[{\texorpdfstring{on\+Wearable\+Initial\+Connected\+Capabilities\+Received()}{onWearableInitialConnectedCapabilitiesReceived()}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+callbacks.\+Wear\+Consumer.\+on\+Wearable\+Initial\+Connected\+Capabilities\+Received (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a767af54293eda1e2a66459c05c48f554}{}\label{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a767af54293eda1e2a66459c05c48f554}
+Called when initial capabilities are received after google api connection. 
+
+Implemented in \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1AbstractWearConsumer_a8681bf340eb758f41f0a6de3b323d4b7}{com.\+google.\+devrel.\+wcl.\+callbacks.\+Abstract\+Wear\+Consumer}.
+
+\index{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}!on\+Wearable\+Initial\+Connected\+Nodes\+Received@{on\+Wearable\+Initial\+Connected\+Nodes\+Received}}
+\index{on\+Wearable\+Initial\+Connected\+Nodes\+Received@{on\+Wearable\+Initial\+Connected\+Nodes\+Received}!com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}}
+\subsubsection[{\texorpdfstring{on\+Wearable\+Initial\+Connected\+Nodes\+Received()}{onWearableInitialConnectedNodesReceived()}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+callbacks.\+Wear\+Consumer.\+on\+Wearable\+Initial\+Connected\+Nodes\+Received (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a90049f8a5821e154dfc0f17dd279e0ef}{}\label{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a90049f8a5821e154dfc0f17dd279e0ef}
+Called when initial list of connected nodes is received -\/ so that you can send messages to it. 
+
+Implemented in \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1AbstractWearConsumer_a61becf80d04512b2fda004f4eeb748fc}{com.\+google.\+devrel.\+wcl.\+callbacks.\+Abstract\+Wear\+Consumer}.
+
+\index{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}!on\+Wearable\+Input\+Closed@{on\+Wearable\+Input\+Closed}}
+\index{on\+Wearable\+Input\+Closed@{on\+Wearable\+Input\+Closed}!com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}}
+\subsubsection[{\texorpdfstring{on\+Wearable\+Input\+Closed(\+Channel channel, int close\+Reason, int app\+Specific\+Error\+Code)}{onWearableInputClosed(Channel channel, int closeReason, int appSpecificErrorCode)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+callbacks.\+Wear\+Consumer.\+on\+Wearable\+Input\+Closed (
+\begin{DoxyParamCaption}
+\item[{Channel}]{channel, }
+\item[{int}]{close\+Reason, }
+\item[{int}]{app\+Specific\+Error\+Code}
+\end{DoxyParamCaption}
+)}\hypertarget{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a210448ac702228356989bddbe455db83}{}\label{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a210448ac702228356989bddbe455db83}
+Called when Input\+Stream associated with the channel is close. 
+
+Implemented in \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1AbstractWearConsumer_afcb5fe06e5b67e908e4cc75c218f5cfe}{com.\+google.\+devrel.\+wcl.\+callbacks.\+Abstract\+Wear\+Consumer}.
+
+\index{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}!on\+Wearable\+Input\+Stream\+For\+Channel\+Opened@{on\+Wearable\+Input\+Stream\+For\+Channel\+Opened}}
+\index{on\+Wearable\+Input\+Stream\+For\+Channel\+Opened@{on\+Wearable\+Input\+Stream\+For\+Channel\+Opened}!com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}}
+\subsubsection[{\texorpdfstring{on\+Wearable\+Input\+Stream\+For\+Channel\+Opened(int status\+Code, String request\+Id, Channel channel, Input\+Stream input\+Stream)}{onWearableInputStreamForChannelOpened(int statusCode, String requestId, Channel channel, InputStream inputStream)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+callbacks.\+Wear\+Consumer.\+on\+Wearable\+Input\+Stream\+For\+Channel\+Opened (
+\begin{DoxyParamCaption}
+\item[{int}]{status\+Code, }
+\item[{String}]{request\+Id, }
+\item[{Channel}]{channel, }
+\item[{Input\+Stream}]{input\+Stream}
+\end{DoxyParamCaption}
+)}\hypertarget{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_ab3785816c06c30602573a978fd869da8}{}\label{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_ab3785816c06c30602573a978fd869da8}
+Called when a request for opening an \hyperlink{}{Input\+Stream} is available. When a clients request to open an \hyperlink{}{java.\+io.\+Output\+Stream} by calling \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearFileTransfer_aa99afe911b451e3689ad5163218337d3}{Wear\+File\+Transfer\#request\+Output\+Stream()}, this library will handle opening a channel from the client node to the target node. On the target node, client should register to this callback to be notified when an \hyperlink{}{Input\+Stream} is available to receive the data sent through the channel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status\+Code} & The status code corresponding to the attempt to open an \hyperlink{}{Input\+Stream}. Successful operation will be identified by \hyperlink{}{com.\+google.\+android.\+gms.\+wearable.\+Wearable\+Status\+Codes\#\+S\+U\+C\+C\+E\+SS} \\
+\hline
+{\em request\+Id} & The unique id for the request that was made by the sender client. This id is provided here for bookkeeping purposes and being able to correlate different requests from the client to the streams that open on the receiver ends. \\
+\hline
+{\em channel} & The instance of \hyperlink{}{Channel} \\
+\hline
+{\em input\+Stream} & The \hyperlink{}{Input\+Stream} that is opened if successful \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1AbstractWearConsumer_af16301727a01a881b29937a695cf4ca2}{com.\+google.\+devrel.\+wcl.\+callbacks.\+Abstract\+Wear\+Consumer}.
+
+\index{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}!on\+Wearable\+Message\+Received@{on\+Wearable\+Message\+Received}}
+\index{on\+Wearable\+Message\+Received@{on\+Wearable\+Message\+Received}!com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}}
+\subsubsection[{\texorpdfstring{on\+Wearable\+Message\+Received(\+Message\+Event message\+Event)}{onWearableMessageReceived(MessageEvent messageEvent)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+callbacks.\+Wear\+Consumer.\+on\+Wearable\+Message\+Received (
+\begin{DoxyParamCaption}
+\item[{Message\+Event}]{message\+Event}
+\end{DoxyParamCaption}
+)}\hypertarget{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a2b91f7080cad43d053d6e942c521e943}{}\label{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a2b91f7080cad43d053d6e942c521e943}
+Called when a message is received. 
+
+Implemented in \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1AbstractWearConsumer_a4d7128fde1585577c2b8a971175384b6}{com.\+google.\+devrel.\+wcl.\+callbacks.\+Abstract\+Wear\+Consumer}.
+
+\index{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}!on\+Wearable\+Output\+Closed@{on\+Wearable\+Output\+Closed}}
+\index{on\+Wearable\+Output\+Closed@{on\+Wearable\+Output\+Closed}!com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}}
+\subsubsection[{\texorpdfstring{on\+Wearable\+Output\+Closed(\+Channel channel, int close\+Reason, int app\+Specific\+Error\+Code)}{onWearableOutputClosed(Channel channel, int closeReason, int appSpecificErrorCode)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+callbacks.\+Wear\+Consumer.\+on\+Wearable\+Output\+Closed (
+\begin{DoxyParamCaption}
+\item[{Channel}]{channel, }
+\item[{int}]{close\+Reason, }
+\item[{int}]{app\+Specific\+Error\+Code}
+\end{DoxyParamCaption}
+)}\hypertarget{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a5dde314a04956ef35c4d079f426bf6db}{}\label{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a5dde314a04956ef35c4d079f426bf6db}
+Called when the output stream associated with the channel is closed. 
+
+Implemented in \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1AbstractWearConsumer_a3d3c8fe16f5bbdbb2cf46ee68fb31b2a}{com.\+google.\+devrel.\+wcl.\+callbacks.\+Abstract\+Wear\+Consumer}.
+
+\index{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}!on\+Wearable\+Peer\+Connected@{on\+Wearable\+Peer\+Connected}}
+\index{on\+Wearable\+Peer\+Connected@{on\+Wearable\+Peer\+Connected}!com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}}
+\subsubsection[{\texorpdfstring{on\+Wearable\+Peer\+Connected(\+Node peer)}{onWearablePeerConnected(Node peer)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+callbacks.\+Wear\+Consumer.\+on\+Wearable\+Peer\+Connected (
+\begin{DoxyParamCaption}
+\item[{Node}]{peer}
+\end{DoxyParamCaption}
+)}\hypertarget{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a2607a0a046ea996f4505e12e8f1c8ef1}{}\label{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a2607a0a046ea996f4505e12e8f1c8ef1}
+Called when a node changes its connectivity status to connected. 
+
+Implemented in \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1AbstractWearConsumer_a55fba0e1ba11d2eb40d0273971b012f2}{com.\+google.\+devrel.\+wcl.\+callbacks.\+Abstract\+Wear\+Consumer}.
+
+\index{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}!on\+Wearable\+Peer\+Disconnected@{on\+Wearable\+Peer\+Disconnected}}
+\index{on\+Wearable\+Peer\+Disconnected@{on\+Wearable\+Peer\+Disconnected}!com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}}
+\subsubsection[{\texorpdfstring{on\+Wearable\+Peer\+Disconnected(\+Node peer)}{onWearablePeerDisconnected(Node peer)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+callbacks.\+Wear\+Consumer.\+on\+Wearable\+Peer\+Disconnected (
+\begin{DoxyParamCaption}
+\item[{Node}]{peer}
+\end{DoxyParamCaption}
+)}\hypertarget{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a52da85e8d5431169bc17b31d241c55ed}{}\label{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a52da85e8d5431169bc17b31d241c55ed}
+Called when a connected peer disconnects. 
+
+Implemented in \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1AbstractWearConsumer_a90567f1d8296196b45cc6e9c421a50ac}{com.\+google.\+devrel.\+wcl.\+callbacks.\+Abstract\+Wear\+Consumer}.
+
+\index{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}!on\+Wearable\+Remove\+Capability\+Result@{on\+Wearable\+Remove\+Capability\+Result}}
+\index{on\+Wearable\+Remove\+Capability\+Result@{on\+Wearable\+Remove\+Capability\+Result}!com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}}
+\subsubsection[{\texorpdfstring{on\+Wearable\+Remove\+Capability\+Result(int status\+Code)}{onWearableRemoveCapabilityResult(int statusCode)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+callbacks.\+Wear\+Consumer.\+on\+Wearable\+Remove\+Capability\+Result (
+\begin{DoxyParamCaption}
+\item[{int}]{status\+Code}
+\end{DoxyParamCaption}
+)}\hypertarget{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a7dd2a5c97d7fc8b489258c911523fa72}{}\label{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a7dd2a5c97d7fc8b489258c911523fa72}
+Called when the result of \hyperlink{}{Wear\+Manager\#remove\+Capabilities(\+String...)} is available.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status\+Code} & The status code of the result \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1AbstractWearConsumer_a892e5f74a9211a4638c1eb3f6e7c831e}{com.\+google.\+devrel.\+wcl.\+callbacks.\+Abstract\+Wear\+Consumer}.
+
+\index{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}!on\+Wearable\+Send\+Data\+Result@{on\+Wearable\+Send\+Data\+Result}}
+\index{on\+Wearable\+Send\+Data\+Result@{on\+Wearable\+Send\+Data\+Result}!com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}}
+\subsubsection[{\texorpdfstring{on\+Wearable\+Send\+Data\+Result(int status\+Code)}{onWearableSendDataResult(int statusCode)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+callbacks.\+Wear\+Consumer.\+on\+Wearable\+Send\+Data\+Result (
+\begin{DoxyParamCaption}
+\item[{int}]{status\+Code}
+\end{DoxyParamCaption}
+)}\hypertarget{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a39149dc277ecb6ed75e3a5214a61f97a}{}\label{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a39149dc277ecb6ed75e3a5214a61f97a}
+Called when the result of \hyperlink{}{Wear\+Manager\#put\+Data\+Item(\+Put\+Data\+Request, Result\+Callback)} is available.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status\+Code} & The status code of the result \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1AbstractWearConsumer_af1ab8ad33735ff72770ed483062663e1}{com.\+google.\+devrel.\+wcl.\+callbacks.\+Abstract\+Wear\+Consumer}.
+
+\index{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}!on\+Wearable\+Send\+File\+Result@{on\+Wearable\+Send\+File\+Result}}
+\index{on\+Wearable\+Send\+File\+Result@{on\+Wearable\+Send\+File\+Result}!com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}}
+\subsubsection[{\texorpdfstring{on\+Wearable\+Send\+File\+Result(int status\+Code, String request\+Id)}{onWearableSendFileResult(int statusCode, String requestId)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+callbacks.\+Wear\+Consumer.\+on\+Wearable\+Send\+File\+Result (
+\begin{DoxyParamCaption}
+\item[{int}]{status\+Code, }
+\item[{String}]{request\+Id}
+\end{DoxyParamCaption}
+)}\hypertarget{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a6c975822ee9bce8a0294b8f1ca1ae838}{}\label{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a6c975822ee9bce8a0294b8f1ca1ae838}
+Called with the result corresponding to a request to send a file using \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearFileTransfer_abdabe46833a251759e295e4de2cc3c95}{Wear\+File\+Transfer\#start\+Transfer()}. This is called on the sender node to inform the sender of the success ot failure of the operation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status\+Code} & The status code corresponding to the attempt to transfer a file. Successful operation will be identified by \hyperlink{}{com.\+google.\+android.\+gms.\+wearable.\+Wearable\+Status\+Codes\#\+S\+U\+C\+C\+E\+SS} \\
+\hline
+{\em request\+Id} & The unique id for this operation. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1AbstractWearConsumer_a48692b76b9c02fc20675a64fffced7b7}{com.\+google.\+devrel.\+wcl.\+callbacks.\+Abstract\+Wear\+Consumer}.
+
+\index{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}!on\+Wearable\+Send\+Message\+Result@{on\+Wearable\+Send\+Message\+Result}}
+\index{on\+Wearable\+Send\+Message\+Result@{on\+Wearable\+Send\+Message\+Result}!com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer@{com\+::google\+::devrel\+::wcl\+::callbacks\+::\+Wear\+Consumer}}
+\subsubsection[{\texorpdfstring{on\+Wearable\+Send\+Message\+Result(int status\+Code)}{onWearableSendMessageResult(int statusCode)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+callbacks.\+Wear\+Consumer.\+on\+Wearable\+Send\+Message\+Result (
+\begin{DoxyParamCaption}
+\item[{int}]{status\+Code}
+\end{DoxyParamCaption}
+)}\hypertarget{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a7de9151e0c9d78734ddf2fab0a0bc6c8}{}\label{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a7de9151e0c9d78734ddf2fab0a0bc6c8}
+Called when the result of \hyperlink{}{Wear\+Manager\#send\+Message(\+String, String, byte\mbox{[}$\,$\mbox{]})} (or other variants of that call) is available.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status\+Code} & The status code of the result \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1AbstractWearConsumer_a5912eb69f1597c70992f4c666e9a9073}{com.\+google.\+devrel.\+wcl.\+callbacks.\+Abstract\+Wear\+Consumer}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Wearable\+Project\+\_\+\+Complete/\+Wear\+Companion\+Library/\+W\+C\+L/src/main/java/com/google/devrel/wcl/callbacks/Wear\+Consumer.\+java\end{DoxyCompactItemize}

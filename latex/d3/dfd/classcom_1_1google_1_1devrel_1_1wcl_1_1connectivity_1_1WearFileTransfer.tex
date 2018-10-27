@@ -1,0 +1,104 @@
+\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearFileTransfer}{}\section{com.\+google.\+devrel.\+wcl.\+connectivity.\+Wear\+File\+Transfer Class Reference}
+\label{classcom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearFileTransfer}\index{com.\+google.\+devrel.\+wcl.\+connectivity.\+Wear\+File\+Transfer@{com.\+google.\+devrel.\+wcl.\+connectivity.\+Wear\+File\+Transfer}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Builder}
+\item 
+interface \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearFileTransfer_1_1OnChannelReadyListener}{On\+Channel\+Ready\+Listener}
+\item 
+interface \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearFileTransfer_1_1OnChannelTransferProgressListener}{On\+Channel\+Transfer\+Progress\+Listener}
+\item 
+interface \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearFileTransfer_1_1OnFileTransferRequestListener}{On\+File\+Transfer\+Request\+Listener}
+\item 
+interface \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearFileTransfer_1_1OnWearableChannelOutputStreamListener}{On\+Wearable\+Channel\+Output\+Stream\+Listener}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearFileTransfer_abdabe46833a251759e295e4de2cc3c95}{start\+Transfer} ()
+\item 
+void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearFileTransfer_aa99afe911b451e3689ad5163218337d3}{request\+Output\+Stream} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final String {\bfseries P\+A\+R\+A\+M\+\_\+\+N\+A\+ME} = \char`\"{}name\char`\"{}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearFileTransfer_abaef335a9bc31e88d82a74c4dc0850ba}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearFileTransfer_abaef335a9bc31e88d82a74c4dc0850ba}
+
+\item 
+static final String {\bfseries P\+A\+R\+A\+M\+\_\+\+S\+I\+ZE} = \char`\"{}size\char`\"{}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearFileTransfer_af77b2bd223527b4fbcd9e24f518b01d9}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearFileTransfer_af77b2bd223527b4fbcd9e24f518b01d9}
+
+\item 
+static final String {\bfseries P\+A\+R\+A\+M\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+ID} = \char`\"{}request-\/id\char`\"{}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearFileTransfer_a19026824640f32875851a0eb7db5fd05}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearFileTransfer_a19026824640f32875851a0eb7db5fd05}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A helper class to facilitate the transfer of a file or bytes across the wearable network. For a pure file transfer, clients should use a pattern similar to the following\+:
+
+On the sender side\+: 
+\begin{DoxyPre}
+\hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearFileTransfer}{WearFileTransfer} fileTransfer = new WearFileTransfer.Builder(targetNode)
+    .setTargetName(targetFileName)
+    .setFile(fileToBeSent))
+    .setOnFileTransferResultListener(myResultListener)
+    .build();
+fileTransfer.transfer();
+\end{DoxyPre}
+ On the receiver end, the library handles the rest and saves the file in the private data storage for the app, under the \char`\"{}target\+File\+Name\char`\"{}. If the receiver node wants to be notified that a file has been received and saved successfully, they can register a Wear\+Consumer listener and override \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a5dbc5ac2372eb9f0833ae5ebfb0a2c9c}{Wear\+Consumer\#on\+Wearable\+File\+Received\+Result(int, String, File, String)} which includes the status, the unique request\+Id for the transfer, the File object pointing to the saved file and the original name of the file on the sender side\+: 
+\begin{DoxyPre}
+mWearConsumer = new AbstractWearConsumer() \{\end{DoxyPre}
+
+
+
+\begin{DoxyPre}    public void onWearableFileReceivedResult(int statusCode, String requestId,
+            File savedFile, String originalName) \{
+        Log.d(TAG, String.format(
+            "File Received: status=%d, requestId=%s, savedLocation=%s, originalName=%s",
+            statusCode, requestId, savedFile.getAbsolutePath(), originalName));
+    \}
+\}
+\end{DoxyPre}
+ It is also possible to use low-\/level apis based on \hyperlink{}{com.\+google.\+android.\+gms.\+wearable.\+Channel\+Api} to open a channel and create an \hyperlink{}{Output\+Stream} on the sender side and and \hyperlink{}{java.\+io.\+Input\+Stream} on the other side to transfer data. This can be done by following a pattern similar to this\+:
+
+On the sender side\+: 
+\begin{DoxyPre}
+\hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearFileTransfer}{WearFileTransfer} fileTransfer = new WearFileTransfer.Builder(targetNode)
+       .setOnChannelOutputStreamListener(listener)
+       .build();
+fileTransfer.requestOutputStream();
+\end{DoxyPre}
+ The \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearFileTransfer_1_1OnWearableChannelOutputStreamListener_abcb9123c27d9ece5365b99571a708f60}{Wear\+Consumer\#on\+Output\+Stream\+For\+Channel\+Ready(int, Channel, Output\+Stream)} listener will receive a reference to the status for this request, a channel and an \hyperlink{}{Output\+Stream} to write to. On the receiver side, the library can inform the client that a channel has been opened and a callback will provide a reference to the channel and the \hyperlink{}{java.\+io.\+Input\+Stream} that the client can use to receive the data\+: 
+\begin{DoxyPre}
+mWearConsumer = new AbstractWearConsumer() \{
+\begin{DoxyVerb}    public void onWearableInputStreamForChannelOpened(int statusCode, String requestId,
+        Channel channel, InputStream inputStream) {
+            //get the data from the inputStream ..
+    }
+\end{DoxyVerb}
+
+\}
+\end{DoxyPre}
+ 
+
+\subsection{Member Function Documentation}
+\index{com\+::google\+::devrel\+::wcl\+::connectivity\+::\+Wear\+File\+Transfer@{com\+::google\+::devrel\+::wcl\+::connectivity\+::\+Wear\+File\+Transfer}!request\+Output\+Stream@{request\+Output\+Stream}}
+\index{request\+Output\+Stream@{request\+Output\+Stream}!com\+::google\+::devrel\+::wcl\+::connectivity\+::\+Wear\+File\+Transfer@{com\+::google\+::devrel\+::wcl\+::connectivity\+::\+Wear\+File\+Transfer}}
+\subsubsection[{\texorpdfstring{request\+Output\+Stream()}{requestOutputStream()}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+connectivity.\+Wear\+File\+Transfer.\+request\+Output\+Stream (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearFileTransfer_aa99afe911b451e3689ad5163218337d3}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearFileTransfer_aa99afe911b451e3689ad5163218337d3}
+Opens a channel and an \hyperlink{}{Output\+Stream} to transfer data. If the intention is to transfer a file, it is recommended to use \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearFileTransfer_abdabe46833a251759e295e4de2cc3c95}{start\+Transfer()} method instead. Using this api, the sender client needs to use \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_ab3785816c06c30602573a978fd869da8}{Wear\+Consumer\#on\+Wearable\+Input\+Stream\+For\+Channel\+Opened} listener to receive an \hyperlink{}{java.\+io.\+Input\+Stream} for writing data to. On the receiver node, the client has to register to \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearFileTransfer_1_1OnWearableChannelOutputStreamListener_abcb9123c27d9ece5365b99571a708f60}{Wear\+Consumer\#on\+Output\+Stream\+For\+Channel\+Ready(int, Channel, Output\+Stream)} to be notified when an \hyperlink{}{java.\+io.\+Input\+Stream} is available to read the bytes from. \index{com\+::google\+::devrel\+::wcl\+::connectivity\+::\+Wear\+File\+Transfer@{com\+::google\+::devrel\+::wcl\+::connectivity\+::\+Wear\+File\+Transfer}!start\+Transfer@{start\+Transfer}}
+\index{start\+Transfer@{start\+Transfer}!com\+::google\+::devrel\+::wcl\+::connectivity\+::\+Wear\+File\+Transfer@{com\+::google\+::devrel\+::wcl\+::connectivity\+::\+Wear\+File\+Transfer}}
+\subsubsection[{\texorpdfstring{start\+Transfer()}{startTransfer()}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+connectivity.\+Wear\+File\+Transfer.\+start\+Transfer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearFileTransfer_abdabe46833a251759e295e4de2cc3c95}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearFileTransfer_abdabe46833a251759e295e4de2cc3c95}
+Initiates the transfer of a file to the target node. Using this method, a file can be transferred without any additional work on the receiver end although the receiver can register a \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a5dbc5ac2372eb9f0833ae5ebfb0a2c9c}{Wear\+Consumer\#on\+Wearable\+File\+Received\+Result(int, String, File, String)} to be notified when the transfer is completed or when it fails. Using \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1callbacks_1_1WearConsumer_a6c975822ee9bce8a0294b8f1ca1ae838}{Wear\+Consumer\#on\+Wearable\+Send\+File\+Result(int, String)}, the sender node can also learn about the status of the file transfer request. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Wearable\+Project\+\_\+\+Complete/\+Wear\+Companion\+Library/\+W\+C\+L/src/main/java/com/google/devrel/wcl/connectivity/Wear\+File\+Transfer.\+java\end{DoxyCompactItemize}

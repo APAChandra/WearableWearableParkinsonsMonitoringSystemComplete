@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+
+    <!--  Header  Starts-->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="50dip"
+        android:paddingTop="5dip"></LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Finger Tapping Assessment"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        android:text="Select a Test:"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/IntraLimbCoordCorrect"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/checkbox" />
+
+        <TextView
+            android:id="@+id/IntraLimbCoord"
+            style="@style/CategoryStyleSub"
+            android:layout_width="wrap_content"
+            android:background="@color/colorMaroon"
+            android:text="Intra-limb coordination:"
+            android:textAlignment="center"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/InterLimbCoordCorrect"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/checkbox" />
+
+        <TextView
+            android:id="@+id/InterLimbCoord"
+            style="@style/CategoryStyleSub"
+            android:layout_width="wrap_content"
+            android:background="@color/colorWarmGrey"
+            android:text="Inter-limb coordination:"
+            android:textAlignment="center"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/IntraLimbBradyCorrect"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/checkbox" />
+
+        <TextView
+            android:id="@+id/IntraLimbBrady"
+            style="@style/CategoryStyleSub"
+            android:layout_width="wrap_content"
+            android:background="@color/colorMaroon"
+            android:text="Intra-limb bradykinesia:"
+            android:textAlignment="center"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+</LinearLayout>

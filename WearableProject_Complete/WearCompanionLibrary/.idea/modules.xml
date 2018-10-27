@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/WCL/WCL.iml" filepath="$PROJECT_DIR$/WCL/WCL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WearCompanionLibrary.iml" filepath="$PROJECT_DIR$/WearCompanionLibrary.iml" />
+    </modules>
+  </component>
+</project>

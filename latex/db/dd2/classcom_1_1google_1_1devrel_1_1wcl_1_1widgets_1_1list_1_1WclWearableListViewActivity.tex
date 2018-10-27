@@ -1,0 +1,71 @@
+\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1WclWearableListViewActivity}{}\section{com.\+google.\+devrel.\+wcl.\+widgets.\+list.\+Wcl\+Wearable\+List\+View\+Activity Class Reference}
+\label{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1WclWearableListViewActivity}\index{com.\+google.\+devrel.\+wcl.\+widgets.\+list.\+Wcl\+Wearable\+List\+View\+Activity@{com.\+google.\+devrel.\+wcl.\+widgets.\+list.\+Wcl\+Wearable\+List\+View\+Activity}}
+
+
+Inheritance diagram for com.\+google.\+devrel.\+wcl.\+widgets.\+list.\+Wcl\+Wearable\+List\+View\+Activity\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{d2/da7/classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1WclWearableListViewActivity__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+google.\+devrel.\+wcl.\+widgets.\+list.\+Wcl\+Wearable\+List\+View\+Activity\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{d5/d9a/classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1WclWearableListViewActivity__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1WearableListConfig}{Wearable\+List\+Config} {\bfseries get\+Configuration\+Internal} ()\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1WclWearableListViewActivity_a9f02582f16faf9ca8c25465798f40f63}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1WclWearableListViewActivity_a9f02582f16faf9ca8c25465798f40f63}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An activity that embeds a \hyperlink{}{Wearable\+List\+View}. Clients can start this activity by calling \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a446c9ae3e23609bc16d87e4ece91ed72}{Wear\+Manager\#show\+Wearable\+List(\+Activity, Wearable\+List\+Config)} like the following example\+:
+
+
+\begin{DoxyPre}
+    String[] data = new String[] \{"List Item 1", "List Item 2", "List Item 3", "List Item 4"\};
+    \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1WearableListConfig}{WearableListConfig} config = new WearableListConfig.Builder(data)
+        .setCheckedIndex(1) // index starts from 0
+        .setRequestCode(REQUEST\_CODE\_LIST\_DIALOG)
+        .setIcon(R.drawable.ic\_person\_24dp)
+        .setCheckable(true)
+        .build();
+    \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a5e9a61518e44bb2c1a89706d51240661}{WearManager.getInstance()}.showWearableList(this, config);
+\end{DoxyPre}
+
+
+After a selection is made, the caller activity will receiver the response in \hyperlink{}{Activity\#on\+Activity\+Result(int, int, Intent)}\+:
+
+
+\begin{DoxyPre}
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) \{
+        if(resultCode == RESULT\_OK)\{
+            WearableListConfig.WearableListResult result
+                   = new WearableListConfig.WearableListResult(data,requestCode);
+            if (result.isHandled()) \{
+                Log.d(TAG, String.format("Position: %d, Value: %s",
+                        result.getSelectedIndex(), result.getSelectedValue()));
+            \} else \{
+                Log.d(TAG, "Another activity is returning a result here ...");
+            \}
+         \}
+     \}
+\end{DoxyPre}
+
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1WearableListConfig}{Wearable\+List\+Config} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Wearable\+Project\+\_\+\+Complete/\+Wear\+Companion\+Library/\+W\+C\+L/src/main/java/com/google/devrel/wcl/widgets/list/Wcl\+Wearable\+List\+View\+Activity.\+java\end{DoxyCompactItemize}

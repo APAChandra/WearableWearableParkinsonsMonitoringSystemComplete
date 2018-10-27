@@ -1,0 +1,365 @@
+\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager}{}\section{com.\+google.\+devrel.\+wcl.\+widgets.\+recording.\+Wcl\+Sound\+Manager Class Reference}
+\label{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager}\index{com.\+google.\+devrel.\+wcl.\+widgets.\+recording.\+Wcl\+Sound\+Manager@{com.\+google.\+devrel.\+wcl.\+widgets.\+recording.\+Wcl\+Sound\+Manager}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+interface \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_1_1OnVoicePlaybackFinishedListener}{On\+Voice\+Playback\+Finished\+Listener}
+\item 
+interface \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_1_1OnVoiceRecordingFinishedListener}{On\+Voice\+Recording\+Finished\+Listener}
+\item 
+interface \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_1_1PlaybackFinishedReason}{Playback\+Finished\+Reason}
+\item 
+interface \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_1_1RecordingFinishedReason}{Recording\+Finished\+Reason}
+\item 
+enum {\bfseries State}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_a13c39c7174f494dbb89e598f6074d0ce}{Wcl\+Sound\+Manager} (Context context)
+\item 
+\hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_a68edc7c6940098234ce962433bf9f792}{Wcl\+Sound\+Manager} (Context context, int sample\+Rate)
+\item 
+void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_aefe2ddd8a648e5c8433174adb606c26d}{record} (String file\+Name)
+\item 
+void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_a492d26a93fceaeff76e5b42db6364b6f}{record} (String file\+Name,@Nullable final \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_1_1OnVoiceRecordingFinishedListener}{On\+Voice\+Recording\+Finished\+Listener} listener)
+\item 
+void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_ac135d723a93a3481eaa9d4d94a11c784}{record} (final Output\+Stream output\+Stream)
+\item 
+void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_ac1f3ca54655eff57c6f1d6d5c3f483ea}{record} (final Output\+Stream output\+Stream,@Nullable final \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_1_1OnVoiceRecordingFinishedListener}{On\+Voice\+Recording\+Finished\+Listener} listener)
+\item 
+void {\bfseries stop\+Recording} ()\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_a3163e551181ebc6a5eb805b0ebf4dc6f}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_a3163e551181ebc6a5eb805b0ebf4dc6f}
+
+\item 
+void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_a4791f74632b8d507238939a257faa171}{play} (final String file\+Name)
+\item 
+void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_a317add68cb22329326bb8b01f8ed40d3}{play} (final String file\+Name,@Nullable \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_1_1OnVoicePlaybackFinishedListener}{On\+Voice\+Playback\+Finished\+Listener} listener)
+\item 
+void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_a742b37a0c6e32dd8beb25ac011fd6502}{play} (final Input\+Stream input\+Stream)
+\item 
+void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_a90d24baed0b9dd197566d76d7d7ec29a}{play} (final Input\+Stream input\+Stream,@Nullable final \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_1_1OnVoicePlaybackFinishedListener}{On\+Voice\+Playback\+Finished\+Listener} listener)
+\item 
+void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_a4cca65082543881b128de7d0e81b1fbc}{stop\+Playing} ()
+\item 
+void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_a1a8937a6d48db87007225c79e0ba9497}{clean\+Up} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int {\bfseries S\+U\+C\+C\+E\+SS} = 1\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_ad117644f11048e6e7f3eb5494386e836}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_ad117644f11048e6e7f3eb5494386e836}
+
+\item 
+static final int {\bfseries E\+R\+R\+O\+R\+\_\+\+I\+O\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON} = 2\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_afec7fd73c176116082898938dd6a9d0e}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_afec7fd73c176116082898938dd6a9d0e}
+
+\item 
+static final int {\bfseries E\+R\+R\+O\+R\+\_\+\+P\+L\+A\+Y\+B\+A\+CK} = 3\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_afa18fb4bad90f0a3f30878e51e334cdb}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_afa18fb4bad90f0a3f30878e51e334cdb}
+
+\item 
+static final int {\bfseries I\+N\+T\+E\+R\+R\+U\+P\+T\+ED} = 4\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_a337d821ad8016c706dd1480e0c3fcfd2}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_a337d821ad8016c706dd1480e0c3fcfd2}
+
+\item 
+static final int {\bfseries E\+R\+R\+O\+R\+\_\+\+F\+I\+L\+E\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND} = 5\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_a6c5666658a467db2e45e3ca5a46d8a03}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_a6c5666658a467db2e45e3ca5a46d8a03}
+
+\item 
+static final int {\bfseries E\+R\+R\+O\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+C\+O\+N\+F\+I\+G\+U\+R\+A\+T\+I\+ON} = 6\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_a72b93939db254b94299c10ef7792d9dc}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_a72b93939db254b94299c10ef7792d9dc}
+
+\item 
+static final int {\bfseries E\+R\+R\+O\+R\+\_\+\+A\+U\+D\+I\+O\+\_\+\+R\+E\+C\+O\+R\+D\+\_\+\+F\+A\+I\+L\+ED} = 7\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_a5da38584198f48f9745c97c509f95209}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_a5da38584198f48f9745c97c509f95209}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A helper class to provide methods to record audio input from the mic and its playback. Recording is supported to a file or to an \hyperlink{}{Output\+Stream} and playback is supported from a file or an \hyperlink{}{Input\+Stream}. After constructing an instance of this class, you can call the appropriate methods to start or stop recording or playback. Callers can also provide listeners that would be notified when recording or playback tasks end, whether on their own or due to an exception or interruption. Note that for recording, caller should obtain 
+\begin{DoxyCode}
+android.permission.RECORD\_AUDIO 
+\end{DoxyCode}
+ permission. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager@{com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager}!Wcl\+Sound\+Manager@{Wcl\+Sound\+Manager}}
+\index{Wcl\+Sound\+Manager@{Wcl\+Sound\+Manager}!com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager@{com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager}}
+\subsubsection[{\texorpdfstring{Wcl\+Sound\+Manager(\+Context context)}{WclSoundManager(Context context)}}]{\setlength{\rightskip}{0pt plus 5cm}com.\+google.\+devrel.\+wcl.\+widgets.\+recording.\+Wcl\+Sound\+Manager.\+Wcl\+Sound\+Manager (
+\begin{DoxyParamCaption}
+\item[{Context}]{context}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_a13c39c7174f494dbb89e598f6074d0ce}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_a13c39c7174f494dbb89e598f6074d0ce}
+Builds an instance of this class which uses the default sample rate \hyperlink{}{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+R\+A\+TE}. \begin{DoxySeeAlso}{See also}
+\hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_a68edc7c6940098234ce962433bf9f792}{Wcl\+Sound\+Manager(\+Context, int)} 
+\end{DoxySeeAlso}
+\index{com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager@{com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager}!Wcl\+Sound\+Manager@{Wcl\+Sound\+Manager}}
+\index{Wcl\+Sound\+Manager@{Wcl\+Sound\+Manager}!com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager@{com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager}}
+\subsubsection[{\texorpdfstring{Wcl\+Sound\+Manager(\+Context context, int sample\+Rate)}{WclSoundManager(Context context, int sampleRate)}}]{\setlength{\rightskip}{0pt plus 5cm}com.\+google.\+devrel.\+wcl.\+widgets.\+recording.\+Wcl\+Sound\+Manager.\+Wcl\+Sound\+Manager (
+\begin{DoxyParamCaption}
+\item[{Context}]{context, }
+\item[{int}]{sample\+Rate}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_a68edc7c6940098234ce962433bf9f792}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_a68edc7c6940098234ce962433bf9f792}
+Builds an instance of this class with the provided
+\begin{DoxyCode}
+sampleRate 
+\end{DoxyCode}
+ . 
+
+\subsection{Member Function Documentation}
+\index{com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager@{com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager}!clean\+Up@{clean\+Up}}
+\index{clean\+Up@{clean\+Up}!com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager@{com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager}}
+\subsubsection[{\texorpdfstring{clean\+Up()}{cleanUp()}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+widgets.\+recording.\+Wcl\+Sound\+Manager.\+clean\+Up (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_a1a8937a6d48db87007225c79e0ba9497}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_a1a8937a6d48db87007225c79e0ba9497}
+Cleans up some resources related to \hyperlink{}{Audio\+Track} and \hyperlink{}{Audio\+Record} \index{com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager@{com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager}!play@{play}}
+\index{play@{play}!com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager@{com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager}}
+\subsubsection[{\texorpdfstring{play(final String file\+Name)}{play(final String fileName)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+widgets.\+recording.\+Wcl\+Sound\+Manager.\+play (
+\begin{DoxyParamCaption}
+\item[{final String}]{file\+Name}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_a4791f74632b8d507238939a257faa171}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_a4791f74632b8d507238939a257faa171}
+Plays a recorded audio file from the application\textquotesingle{}s private data storage with the given name 
+\begin{DoxyCode}
+fileName 
+\end{DoxyCode}
+ . This method handles errors gracefully and logs them if one encountered.
+
+{\bfseries Note. }This method should be called on the UI thread.
+
+\begin{DoxySeeAlso}{See also}
+\#play(\+Input\+Stream) 
+
+\#play(\+Input\+Stream, On\+Voice\+Playback\+Finished\+Listener) 
+
+\#play(\+String, On\+Voice\+Playback\+Finished\+Listener) 
+\end{DoxySeeAlso}
+\index{com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager@{com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager}!play@{play}}
+\index{play@{play}!com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager@{com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager}}
+\subsubsection[{\texorpdfstring{play(final String file\+Name,"@Nullable On\+Voice\+Playback\+Finished\+Listener listener)}{play(final String fileName,@Nullable OnVoicePlaybackFinishedListener listener)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+widgets.\+recording.\+Wcl\+Sound\+Manager.\+play (
+\begin{DoxyParamCaption}
+\item[{final String}]{file\+Name, }
+\item[{@Nullable {\bf On\+Voice\+Playback\+Finished\+Listener}}]{listener}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_a317add68cb22329326bb8b01f8ed40d3}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_a317add68cb22329326bb8b01f8ed40d3}
+Plays a recorded audio file from the application\textquotesingle{}s private data storage with the given name 
+\begin{DoxyCode}
+fileName 
+\end{DoxyCode}
+ .
+
+{\bfseries Note. }This method should be called on the UI thread.
+
+\begin{DoxySeeAlso}{See also}
+\#play(\+Input\+Stream) 
+\end{DoxySeeAlso}
+\index{com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager@{com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager}!play@{play}}
+\index{play@{play}!com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager@{com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager}}
+\subsubsection[{\texorpdfstring{play(final Input\+Stream input\+Stream)}{play(final InputStream inputStream)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+widgets.\+recording.\+Wcl\+Sound\+Manager.\+play (
+\begin{DoxyParamCaption}
+\item[{final Input\+Stream}]{input\+Stream}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_a742b37a0c6e32dd8beb25ac011fd6502}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_a742b37a0c6e32dd8beb25ac011fd6502}
+Starts the playback of incoming bytes from the provided
+\begin{DoxyCode}
+inputStream 
+\end{DoxyCode}
+ . This method handles various errors internally and ends after logging them, it gracefully ends. This method will close the 
+\begin{DoxyCode}
+inputStream 
+\end{DoxyCode}
+ upon completion.
+
+{\bfseries Note. }This method should be called on the UI thread.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Stream} & The Input\+Stream to read from. Upon completion, it will be closed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\#play(\+Input\+Stream, On\+Voice\+Playback\+Finished\+Listener) 
+
+\#play(\+String) 
+
+\#play(\+String, On\+Voice\+Playback\+Finished\+Listener) 
+\end{DoxySeeAlso}
+\index{com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager@{com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager}!play@{play}}
+\index{play@{play}!com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager@{com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager}}
+\subsubsection[{\texorpdfstring{play(final Input\+Stream input\+Stream,"@Nullable final On\+Voice\+Playback\+Finished\+Listener listener)}{play(final InputStream inputStream,@Nullable final OnVoicePlaybackFinishedListener listener)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+widgets.\+recording.\+Wcl\+Sound\+Manager.\+play (
+\begin{DoxyParamCaption}
+\item[{final Input\+Stream}]{input\+Stream, }
+\item[{@Nullable final {\bf On\+Voice\+Playback\+Finished\+Listener}}]{listener}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_a90d24baed0b9dd197566d76d7d7ec29a}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_a90d24baed0b9dd197566d76d7d7ec29a}
+Starts the playback of a recorded bytes from the provided
+\begin{DoxyCode}
+inputStream 
+\end{DoxyCode}
+ . This method handles various errors internally and ends gracefully when one is encountered. It calls the 
+\begin{DoxyCode}
+listener 
+\end{DoxyCode}
+ to report its status when it ends. This method will close the 
+\begin{DoxyCode}
+inputStream 
+\end{DoxyCode}
+ upon completion.
+
+{\bfseries Note. }This method should be called on the UI thread.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Stream} & The Input\+Stream to read from. It will be closed upon completion. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_1_1OnVoicePlaybackFinishedListener}{On\+Voice\+Playback\+Finished\+Listener} 
+
+\#play(\+Input\+Stream) 
+
+\#play(\+String) 
+
+\#play(\+String, On\+Voice\+Playback\+Finished\+Listener) 
+\end{DoxySeeAlso}
+\index{com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager@{com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager}!record@{record}}
+\index{record@{record}!com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager@{com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager}}
+\subsubsection[{\texorpdfstring{record(\+String file\+Name)}{record(String fileName)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+widgets.\+recording.\+Wcl\+Sound\+Manager.\+record (
+\begin{DoxyParamCaption}
+\item[{String}]{file\+Name}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_aefe2ddd8a648e5c8433174adb606c26d}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_aefe2ddd8a648e5c8433174adb606c26d}
+Starts recording from the mic and writing the result into a file with the given 
+\begin{DoxyCode}
+fileName 
+\end{DoxyCode}
+ in the application\textquotesingle{}s private data storage. This method handles various errors gracefully and logs any errors that it encounters.
+
+{\bfseries Note. }This method should be called on the UI thread.
+
+\begin{DoxySeeAlso}{See also}
+\#record(\+String, On\+Voice\+Recording\+Finished\+Listener) 
+
+\#record(\+Output\+Stream) 
+\end{DoxySeeAlso}
+\index{com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager@{com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager}!record@{record}}
+\index{record@{record}!com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager@{com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager}}
+\subsubsection[{\texorpdfstring{record(\+String file\+Name,"@Nullable final On\+Voice\+Recording\+Finished\+Listener listener)}{record(String fileName,@Nullable final OnVoiceRecordingFinishedListener listener)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+widgets.\+recording.\+Wcl\+Sound\+Manager.\+record (
+\begin{DoxyParamCaption}
+\item[{String}]{file\+Name, }
+\item[{@Nullable final {\bf On\+Voice\+Recording\+Finished\+Listener}}]{listener}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_a492d26a93fceaeff76e5b42db6364b6f}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_a492d26a93fceaeff76e5b42db6364b6f}
+Starts recording from the mic and writing the result into a file with the given 
+\begin{DoxyCode}
+fileName 
+\end{DoxyCode}
+ in the application\textquotesingle{}s private data storage. This method handles various errors gracefully and reports the status through the
+\begin{DoxyCode}
+listener 
+\end{DoxyCode}
+ if it is not
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ .
+
+{\bfseries Note. }This method should be called on the UI thread.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_1_1OnVoiceRecordingFinishedListener}{On\+Voice\+Recording\+Finished\+Listener} 
+
+\hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_aefe2ddd8a648e5c8433174adb606c26d}{record(\+String)} 
+
+\#record(\+Output\+Stream) 
+
+\#record(\+Output\+Stream, On\+Voice\+Recording\+Finished\+Listener) 
+\end{DoxySeeAlso}
+\index{com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager@{com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager}!record@{record}}
+\index{record@{record}!com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager@{com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager}}
+\subsubsection[{\texorpdfstring{record(final Output\+Stream output\+Stream)}{record(final OutputStream outputStream)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+widgets.\+recording.\+Wcl\+Sound\+Manager.\+record (
+\begin{DoxyParamCaption}
+\item[{final Output\+Stream}]{output\+Stream}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_ac135d723a93a3481eaa9d4d94a11c784}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_ac135d723a93a3481eaa9d4d94a11c784}
+Starts recording from the mic and writing the result to the
+\begin{DoxyCode}
+outputStream 
+\end{DoxyCode}
+ . This method handles various errors gracefully and logs any errors that it encounters. Caller should obtain
+\begin{DoxyCode}
+android.permission.RECORD\_AUDIO 
+\end{DoxyCode}
+ permission to record from the microphone.
+
+{\bfseries Note. }This method should be called on the UI thread.
+
+
+\begin{DoxyParams}{Parameters}
+{\em output\+Stream} & The stream to write the recording to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\#record(\+Output\+Stream, On\+Voice\+Recording\+Finished\+Listener) 
+
+\hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_aefe2ddd8a648e5c8433174adb606c26d}{record(\+String)} 
+
+\#record(\+String, On\+Voice\+Recording\+Finished\+Listener) 
+\end{DoxySeeAlso}
+\index{com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager@{com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager}!record@{record}}
+\index{record@{record}!com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager@{com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager}}
+\subsubsection[{\texorpdfstring{record(final Output\+Stream output\+Stream,"@Nullable final On\+Voice\+Recording\+Finished\+Listener listener)}{record(final OutputStream outputStream,@Nullable final OnVoiceRecordingFinishedListener listener)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+widgets.\+recording.\+Wcl\+Sound\+Manager.\+record (
+\begin{DoxyParamCaption}
+\item[{final Output\+Stream}]{output\+Stream, }
+\item[{@Nullable final {\bf On\+Voice\+Recording\+Finished\+Listener}}]{listener}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_ac1f3ca54655eff57c6f1d6d5c3f483ea}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_ac1f3ca54655eff57c6f1d6d5c3f483ea}
+Starts recording from the mic and writing the result to the
+\begin{DoxyCode}
+outputStream 
+\end{DoxyCode}
+ . This method handles various errors gracefully and reports the status through the
+\begin{DoxyCode}
+listener 
+\end{DoxyCode}
+ if it is not
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ . Upon completion, it closes the
+\begin{DoxyCode}
+outputStream 
+\end{DoxyCode}
+ . Caller should obtain
+\begin{DoxyCode}
+android.permission.RECORD\_AUDIO 
+\end{DoxyCode}
+ permission to record from the microphone.
+
+{\bfseries Note. }This method should be called on the UI thread.
+
+
+\begin{DoxyParams}{Parameters}
+{\em output\+Stream} & The stream to write the recording to. Upon completion, the stream will be closed. \\
+\hline
+{\em listener} & A listener to be called with the status of this call when recording is done. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_1_1OnVoiceRecordingFinishedListener}{On\+Voice\+Recording\+Finished\+Listener} 
+
+\#record(\+Output\+Stream) 
+
+\hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_aefe2ddd8a648e5c8433174adb606c26d}{record(\+String)} 
+
+\#record(\+String, On\+Voice\+Recording\+Finished\+Listener) 
+\end{DoxySeeAlso}
+\index{com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager@{com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager}!stop\+Playing@{stop\+Playing}}
+\index{stop\+Playing@{stop\+Playing}!com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager@{com\+::google\+::devrel\+::wcl\+::widgets\+::recording\+::\+Wcl\+Sound\+Manager}}
+\subsubsection[{\texorpdfstring{stop\+Playing()}{stopPlaying()}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+widgets.\+recording.\+Wcl\+Sound\+Manager.\+stop\+Playing (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_a4cca65082543881b128de7d0e81b1fbc}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager_a4cca65082543881b128de7d0e81b1fbc}
+Stops the playback 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Wearable\+Project\+\_\+\+Complete/\+Wear\+Companion\+Library/\+W\+C\+L/src/main/java/com/google/devrel/wcl/widgets/recording/Wcl\+Sound\+Manager.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,80 @@
+\hypertarget{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1FileTransferActivity}{}\section{com.\+example.\+android.\+wearable.\+wcldemo.\+pages.\+File\+Transfer\+Activity Class Reference}
+\label{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1FileTransferActivity}\index{com.\+example.\+android.\+wearable.\+wcldemo.\+pages.\+File\+Transfer\+Activity@{com.\+example.\+android.\+wearable.\+wcldemo.\+pages.\+File\+Transfer\+Activity}}
+
+
+Inheritance diagram for com.\+example.\+android.\+wearable.\+wcldemo.\+pages.\+File\+Transfer\+Activity\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/d98/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1FileTransferActivity__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+example.\+android.\+wearable.\+wcldemo.\+pages.\+File\+Transfer\+Activity\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d4d/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1FileTransferActivity__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1FileTransferActivity_ab5d34a68bab9687e8c6c6728078b1787}{file\+Check} ()
+\item 
+void {\bfseries on\+Click} (View view)\hypertarget{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1FileTransferActivity_a9e8bcc2ee814cbb77934257f8094861b}{}\label{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1FileTransferActivity_a9e8bcc2ee814cbb77934257f8094861b}
+
+\item 
+void \hyperlink{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1FileTransferActivity_a1d913d854d84ec830dc2bc724d580bef}{on\+Progress\+Updated} (final long progress, final long max)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries on\+Create} (Bundle saved\+Instance\+State)\hypertarget{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1FileTransferActivity_a850d1ecdeb1eeab869a6775c2b06f8ad}{}\label{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1FileTransferActivity_a850d1ecdeb1eeab869a6775c2b06f8ad}
+
+\item 
+void {\bfseries on\+Resume} ()\hypertarget{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1FileTransferActivity_a722d42846eabd9a70e5cc9d0b534247d}{}\label{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1FileTransferActivity_a722d42846eabd9a70e5cc9d0b534247d}
+
+\item 
+void {\bfseries on\+Pause} ()\hypertarget{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1FileTransferActivity_a1a7be84800a05c0f9c69f842c50dafc7}{}\label{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1FileTransferActivity_a1a7be84800a05c0f9c69f842c50dafc7}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An activity that shows two different approaches to transferring files between wear nodes.
+
+The low level approach transfers the db file which is specified in the method \hyperlink{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1FileTransferActivity_ab5d34a68bab9687e8c6c6728078b1787}{file\+Check()} from the wear device to the phone using method and we use \hyperlink{}{Wear\+File\+Transfer} apis to open a channel between the two devices first and then open an \hyperlink{}{Output\+Stream} on the wear device and an \hyperlink{}{Input\+Stream} on the phone (through the channel). Then we simply read chunks of bytes from the db file(filefor\+Db) and write to the
+\begin{DoxyCode}
+OutputStream 
+\end{DoxyCode}
+ opened on the wear and read the transferred bytes from the 
+\begin{DoxyCode}
+InputStream 
+\end{DoxyCode}
+ on the mobile. This approach is more useful for real-\/time communication to transfer bytes as they become available (for example as the microphone on the watch is recording a voice message). In this sample, we show a progress bar on the wear as we transfer bytes of the db file to the phone.
+
+A lot of the complexity involved in the orchestration of this approach is done in the library and is hidden from the developer; developers only request an output stream on one end and will be notified when the channel is established and when an output stream is available on the sender side, and will receive a similar callback on the other end when an input stream is available. 
+
+\subsection{Member Function Documentation}
+\index{com\+::example\+::android\+::wearable\+::wcldemo\+::pages\+::\+File\+Transfer\+Activity@{com\+::example\+::android\+::wearable\+::wcldemo\+::pages\+::\+File\+Transfer\+Activity}!file\+Check@{file\+Check}}
+\index{file\+Check@{file\+Check}!com\+::example\+::android\+::wearable\+::wcldemo\+::pages\+::\+File\+Transfer\+Activity@{com\+::example\+::android\+::wearable\+::wcldemo\+::pages\+::\+File\+Transfer\+Activity}}
+\subsubsection[{\texorpdfstring{file\+Check()}{fileCheck()}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+example.\+android.\+wearable.\+wcldemo.\+pages.\+File\+Transfer\+Activity.\+file\+Check (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1FileTransferActivity_ab5d34a68bab9687e8c6c6728078b1787}{}\label{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1FileTransferActivity_ab5d34a68bab9687e8c6c6728078b1787}
+To check the if the db file\hyperlink{}{com.\+example.\+android.\+wearable.\+wcldemo.\+Sensor\+Data\+Db\+Helper\#\+D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+N\+A\+ME} exists and to verify the length of the db file. \index{com\+::example\+::android\+::wearable\+::wcldemo\+::pages\+::\+File\+Transfer\+Activity@{com\+::example\+::android\+::wearable\+::wcldemo\+::pages\+::\+File\+Transfer\+Activity}!on\+Progress\+Updated@{on\+Progress\+Updated}}
+\index{on\+Progress\+Updated@{on\+Progress\+Updated}!com\+::example\+::android\+::wearable\+::wcldemo\+::pages\+::\+File\+Transfer\+Activity@{com\+::example\+::android\+::wearable\+::wcldemo\+::pages\+::\+File\+Transfer\+Activity}}
+\subsubsection[{\texorpdfstring{on\+Progress\+Updated(final long progress, final long max)}{onProgressUpdated(final long progress, final long max)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+example.\+android.\+wearable.\+wcldemo.\+pages.\+File\+Transfer\+Activity.\+on\+Progress\+Updated (
+\begin{DoxyParamCaption}
+\item[{final long}]{progress, }
+\item[{final long}]{max}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1FileTransferActivity_a1d913d854d84ec830dc2bc724d580bef}{}\label{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1FileTransferActivity_a1d913d854d84ec830dc2bc724d580bef}
+Called on a non-\/\+UI thread This method shows the progress bar as the file is being transferred once the \char`\"{}\+Send D\+B\char`\"{} button is pressed. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Wearable\+Project\+\_\+\+Complete/\+Wcl\+Demo\+Sample/wear/src/main/java/com/example/android/wearable/wcldemo/pages/File\+Transfer\+Activity.\+java\end{DoxyCompactItemize}

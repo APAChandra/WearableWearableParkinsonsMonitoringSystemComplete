@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!--  Header  Starts-->
+    <LinearLayout android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dip"
+        android:paddingBottom="50dip"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Test"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"/>
+
+    <TextView
+        android:id="@+id/tvTremor"
+        style="@style/CategoryStyle"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:text="Tremor"
+        android:onClick="openTremorList"
+        android:textSize="25dp"
+        android:background="@color/colorMaroon"/>
+
+    <TextView
+        android:id="@+id/tvBradykinesia"
+        style="@style/CategoryStyle"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:text="Bradykinesia"
+        android:background="@color/colorWarmGrey"
+        android:textSize="25dp"
+        android:onClick="openBradykinesiaList" />
+
+    <TextView
+        android:id="@+id/tvBalance"
+        style="@style/CategoryStyle"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:text="Balance"
+        android:onClick="openBalanceList"
+        android:textSize="25dp"
+        android:background="@color/colorMaroon"/>
+
+
+
+    <TextView
+        android:id="@+id/tvGait"
+        style="@style/CategoryStyle"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:text="Gait"
+        android:textSize="25dp"
+        android:background="@color/colorWarmGrey"
+        android:onClick="openGaitList" />
+
+    <TextView
+        android:id="@+id/tvCognitive"
+        style="@style/CategoryStyle"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:text="Cognitive"
+        android:textSize="25dp"
+        android:onClick="openCognitiveList"
+        android:background="@color/colorMaroon"/>
+
+    <TextView
+        android:id="@+id/tvFile"
+        style="@style/CategoryStyle"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:text="File Transfer"
+        android:onClick="openBalanceList"
+        android:textSize="25dp"
+        android:background="@color/colorWarmGrey"/>
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

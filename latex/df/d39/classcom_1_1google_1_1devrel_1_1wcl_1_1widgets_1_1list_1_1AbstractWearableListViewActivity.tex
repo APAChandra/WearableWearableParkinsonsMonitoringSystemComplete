@@ -1,0 +1,97 @@
+\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1AbstractWearableListViewActivity}{}\section{com.\+google.\+devrel.\+wcl.\+widgets.\+list.\+Abstract\+Wearable\+List\+View\+Activity Class Reference}
+\label{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1AbstractWearableListViewActivity}\index{com.\+google.\+devrel.\+wcl.\+widgets.\+list.\+Abstract\+Wearable\+List\+View\+Activity@{com.\+google.\+devrel.\+wcl.\+widgets.\+list.\+Abstract\+Wearable\+List\+View\+Activity}}
+
+
+Inheritance diagram for com.\+google.\+devrel.\+wcl.\+widgets.\+list.\+Abstract\+Wearable\+List\+View\+Activity\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{dd/d7c/classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1AbstractWearableListViewActivity__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+google.\+devrel.\+wcl.\+widgets.\+list.\+Abstract\+Wearable\+List\+View\+Activity\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{da/d0a/classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1AbstractWearableListViewActivity__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1AbstractWearableListViewActivity_a2846ac8d8bf01ce575387a9d6598e2c7}{on\+Item\+Clicked} (int position, String value)
+\item 
+abstract \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1WearableListConfig}{Wearable\+List\+Config} \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1AbstractWearableListViewActivity_a5b8d193250e103755ce1071721885059}{get\+Configuration} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An abstract activity that embeds a \hyperlink{}{android.\+support.\+wearable.\+view.\+Wearable\+List\+View}. Clients can extend this class and implement its two abstract methods to build a complete \hyperlink{}{android.\+support.\+wearable.\+view.\+Wearable\+List\+View} in their client application that is backed by a \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1SelectableWearableListAdapter}{Selectable\+Wearable\+List\+Adapter} adapter; all the details of setting up the adapter and wiring that up to the embedded \hyperlink{}{android.\+support.\+wearable.\+view.\+Wearable\+List\+View} are handled by the library.
+
+Here is an example of how this can be done\+: 
+\begin{DoxyPre}
+    public class MyListActivity extends \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1AbstractWearableListViewActivity}{AbstractWearableListViewActivity} \{
+\begin{DoxyVerb}public void onItemClicked(int position, String value) {
+    Log.d(TAG, "Item clicked: position=" + position + ", value=" + value);
+    // use the selected value ...
+}
+
+public WearableListConfig getConfiguration() {
+    String[] data = new String[] {"Row 1", "Row 2", "Row 3"};
+    int[] icons = new int[] { R.drawable.icon1, R.drawable.icon2, R.drawable.icon3};
+    WearableListConfig listConfig = new WearableListConfig.Builder(data)
+        .setIcons(icons)
+        .setCheckable(true)
+        .build();
+    return listConfig;
+}
+\end{DoxyVerb}
+
+    \}
+ \end{DoxyPre}
+ 
+
+\subsection{Member Function Documentation}
+\index{com\+::google\+::devrel\+::wcl\+::widgets\+::list\+::\+Abstract\+Wearable\+List\+View\+Activity@{com\+::google\+::devrel\+::wcl\+::widgets\+::list\+::\+Abstract\+Wearable\+List\+View\+Activity}!get\+Configuration@{get\+Configuration}}
+\index{get\+Configuration@{get\+Configuration}!com\+::google\+::devrel\+::wcl\+::widgets\+::list\+::\+Abstract\+Wearable\+List\+View\+Activity@{com\+::google\+::devrel\+::wcl\+::widgets\+::list\+::\+Abstract\+Wearable\+List\+View\+Activity}}
+\subsubsection[{\texorpdfstring{get\+Configuration()}{getConfiguration()}}]{\setlength{\rightskip}{0pt plus 5cm}abstract {\bf Wearable\+List\+Config} com.\+google.\+devrel.\+wcl.\+widgets.\+list.\+Abstract\+Wearable\+List\+View\+Activity.\+get\+Configuration (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1AbstractWearableListViewActivity_a5b8d193250e103755ce1071721885059}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1AbstractWearableListViewActivity_a5b8d193250e103755ce1071721885059}
+Returns the \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1WearableListConfig}{Wearable\+List\+Config} that should be used in setting up this list view. Here is an example\+: 
+\begin{DoxyPre}
+    public \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1WearableListConfig}{WearableListConfig} \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1AbstractWearableListViewActivity_a5b8d193250e103755ce1071721885059}{getConfiguration()} \{
+        String[] data = new String[] \{"Row 1", "Row 2", "Row 3"\};
+        int[] icons = new int[] \{ R.drawable\_row1, R.drawable.row2, R.drawable.row3\};
+        \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1WearableListConfig}{WearableListConfig} listConfig = new WearableListConfig.Builder(data)
+            .setIcons(icons)
+            .setCheckable(true)
+            .build();
+        return listConfig;
+    \}
+\end{DoxyPre}
+ \index{com\+::google\+::devrel\+::wcl\+::widgets\+::list\+::\+Abstract\+Wearable\+List\+View\+Activity@{com\+::google\+::devrel\+::wcl\+::widgets\+::list\+::\+Abstract\+Wearable\+List\+View\+Activity}!on\+Item\+Clicked@{on\+Item\+Clicked}}
+\index{on\+Item\+Clicked@{on\+Item\+Clicked}!com\+::google\+::devrel\+::wcl\+::widgets\+::list\+::\+Abstract\+Wearable\+List\+View\+Activity@{com\+::google\+::devrel\+::wcl\+::widgets\+::list\+::\+Abstract\+Wearable\+List\+View\+Activity}}
+\subsubsection[{\texorpdfstring{on\+Item\+Clicked(int position, String value)}{onItemClicked(int position, String value)}}]{\setlength{\rightskip}{0pt plus 5cm}abstract void com.\+google.\+devrel.\+wcl.\+widgets.\+list.\+Abstract\+Wearable\+List\+View\+Activity.\+on\+Item\+Clicked (
+\begin{DoxyParamCaption}
+\item[{int}]{position, }
+\item[{String}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1AbstractWearableListViewActivity_a2846ac8d8bf01ce575387a9d6598e2c7}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1AbstractWearableListViewActivity_a2846ac8d8bf01ce575387a9d6598e2c7}
+Called when a row from the list is selected.
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The 0-\/based position of the selected row in the list \\
+\hline
+{\em value} & The string value of the selection \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Wearable\+Project\+\_\+\+Complete/\+Wear\+Companion\+Library/\+W\+C\+L/src/main/java/com/google/devrel/wcl/widgets/list/Abstract\+Wearable\+List\+View\+Activity.\+java\end{DoxyCompactItemize}

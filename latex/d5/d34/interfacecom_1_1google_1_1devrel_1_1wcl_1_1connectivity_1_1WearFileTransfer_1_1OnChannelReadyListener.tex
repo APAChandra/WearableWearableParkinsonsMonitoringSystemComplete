@@ -1,0 +1,38 @@
+\hypertarget{interfacecom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearFileTransfer_1_1OnChannelReadyListener}{}\section{com.\+google.\+devrel.\+wcl.\+connectivity.\+Wear\+File\+Transfer.\+On\+Channel\+Ready\+Listener Interface Reference}
+\label{interfacecom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearFileTransfer_1_1OnChannelReadyListener}\index{com.\+google.\+devrel.\+wcl.\+connectivity.\+Wear\+File\+Transfer.\+On\+Channel\+Ready\+Listener@{com.\+google.\+devrel.\+wcl.\+connectivity.\+Wear\+File\+Transfer.\+On\+Channel\+Ready\+Listener}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearFileTransfer_1_1OnChannelReadyListener_a61ab5aba56b7d2a25abdc3567b485ddc}{on\+Channel\+Ready} (int status\+Code, Channel channel)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Internal only. An interface to provide feedback when the result for opening a channel is available. 
+
+\subsection{Member Function Documentation}
+\index{com\+::google\+::devrel\+::wcl\+::connectivity\+::\+Wear\+File\+Transfer\+::\+On\+Channel\+Ready\+Listener@{com\+::google\+::devrel\+::wcl\+::connectivity\+::\+Wear\+File\+Transfer\+::\+On\+Channel\+Ready\+Listener}!on\+Channel\+Ready@{on\+Channel\+Ready}}
+\index{on\+Channel\+Ready@{on\+Channel\+Ready}!com\+::google\+::devrel\+::wcl\+::connectivity\+::\+Wear\+File\+Transfer\+::\+On\+Channel\+Ready\+Listener@{com\+::google\+::devrel\+::wcl\+::connectivity\+::\+Wear\+File\+Transfer\+::\+On\+Channel\+Ready\+Listener}}
+\subsubsection[{\texorpdfstring{on\+Channel\+Ready(int status\+Code, Channel channel)}{onChannelReady(int statusCode, Channel channel)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+connectivity.\+Wear\+File\+Transfer.\+On\+Channel\+Ready\+Listener.\+on\+Channel\+Ready (
+\begin{DoxyParamCaption}
+\item[{int}]{status\+Code, }
+\item[{Channel}]{channel}
+\end{DoxyParamCaption}
+)}\hypertarget{interfacecom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearFileTransfer_1_1OnChannelReadyListener_a61ab5aba56b7d2a25abdc3567b485ddc}{}\label{interfacecom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearFileTransfer_1_1OnChannelReadyListener_a61ab5aba56b7d2a25abdc3567b485ddc}
+Is called when the result of the request for opening a channel is ready. The 
+\begin{DoxyCode}
+statusCode 
+\end{DoxyCode}
+ can be used to decide if the request was successful or not. If successful, the
+\begin{DoxyCode}
+channel 
+\end{DoxyCode}
+ will be the resulting channel, otherwise it will be 
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ . 
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Wearable\+Project\+\_\+\+Complete/\+Wear\+Companion\+Library/\+W\+C\+L/src/main/java/com/google/devrel/wcl/connectivity/Wear\+File\+Transfer.\+java\end{DoxyCompactItemize}

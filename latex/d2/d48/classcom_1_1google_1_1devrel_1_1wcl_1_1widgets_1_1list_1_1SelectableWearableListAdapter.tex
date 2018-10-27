@@ -1,0 +1,135 @@
+\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1SelectableWearableListAdapter}{}\section{com.\+google.\+devrel.\+wcl.\+widgets.\+list.\+Selectable\+Wearable\+List\+Adapter Class Reference}
+\label{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1SelectableWearableListAdapter}\index{com.\+google.\+devrel.\+wcl.\+widgets.\+list.\+Selectable\+Wearable\+List\+Adapter@{com.\+google.\+devrel.\+wcl.\+widgets.\+list.\+Selectable\+Wearable\+List\+Adapter}}
+
+
+Inheritance diagram for com.\+google.\+devrel.\+wcl.\+widgets.\+list.\+Selectable\+Wearable\+List\+Adapter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{d5/d65/classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1SelectableWearableListAdapter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+google.\+devrel.\+wcl.\+widgets.\+list.\+Selectable\+Wearable\+List\+Adapter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{d7/d02/classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1SelectableWearableListAdapter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Selectable\+Wearable\+List\+Adapter} (Context context, String\mbox{[}$\,$\mbox{]} data\+Set, int center\+Icon\+Res\+Id)\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1SelectableWearableListAdapter_a6ce54e08ae82b972f72aabe92613aa0d}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1SelectableWearableListAdapter_a6ce54e08ae82b972f72aabe92613aa0d}
+
+\item 
+{\bfseries Selectable\+Wearable\+List\+Adapter} (Context context, String\mbox{[}$\,$\mbox{]} data\+Set, int\mbox{[}$\,$\mbox{]} center\+Icon\+Res\+Ids)\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1SelectableWearableListAdapter_aaae73398168b503a553c3ec476f494a4}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1SelectableWearableListAdapter_aaae73398168b503a553c3ec476f494a4}
+
+\item 
+Wearable\+List\+View.\+View\+Holder {\bfseries on\+Create\+View\+Holder} (View\+Group parent, int view\+Type)\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1SelectableWearableListAdapter_a071188fa471ce08116b26bfb0c00d204}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1SelectableWearableListAdapter_a071188fa471ce08116b26bfb0c00d204}
+
+\item 
+void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1SelectableWearableListAdapter_a8b47c5e515a0b5589241612e9d3ede5e}{set\+Checked} (int checked\+Position, int checked\+Resource\+Id)
+\item 
+void {\bfseries set\+Checkable} (boolean checkable)\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1SelectableWearableListAdapter_a1266fd6198c44fa7cb896bd194dba334}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1SelectableWearableListAdapter_a1266fd6198c44fa7cb896bd194dba334}
+
+\item 
+void {\bfseries on\+Bind\+View\+Holder} (Wearable\+List\+View.\+View\+Holder holder, int position)\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1SelectableWearableListAdapter_a1fed6a167ff691aa042aabafea99ff47}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1SelectableWearableListAdapter_a1fed6a167ff691aa042aabafea99ff47}
+
+\item 
+int {\bfseries get\+Item\+Count} ()\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1SelectableWearableListAdapter_a64686d5cb2391fef1312a44d6f716256}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1SelectableWearableListAdapter_a64686d5cb2391fef1312a44d6f716256}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A simple \hyperlink{}{Wearable\+List\+View.\+Adapter} that accepts an array of strings as its data set. Developers can instantiate this adapter and pass a string array to the constructor. The default behavior is to use a filled-\/in circle for each row. The off-\/centered rows will be using a faded color for both the text and the circle while the centered row will have a larger circle to stand out. Developers can optionally add an icon to the circles.
+
+A number of resources can be set to change the look and feel of each row; consult the resource file
+\begin{DoxyCode}
+wcl\_list.xml 
+\end{DoxyCode}
+ for details (to customize these values, copy this resource to your client application and change the values as needed).
+
+To be notified when a row is clicked on, implement \hyperlink{}{Wearable\+List\+View.\+Click\+Listener\#on\+Click(\+Wearable\+List\+View.\+View\+Holder)}\+: 
+\begin{DoxyPre}
+  public void onClick(WearableListView.ViewHolder v) \{
+       Integer position = (Integer) v.itemView.getTag();
+       // use this data to complete some action ...
+   \}
+\end{DoxyPre}
+
+
+It is also possible to show the \char`\"{}checked\char`\"{} state of an item. To enable this, call 
+\begin{DoxyCode}
+setCheckable(\textcolor{keyword}{true}) 
+\end{DoxyCode}
+ (the default value is
+\begin{DoxyCode}
+\textcolor{keyword}{false} 
+\end{DoxyCode}
+ ).
+
+The same method can also be used to make the rows dynamically selectable; you would need to add the following snippet to the \hyperlink{}{Wearable\+List\+View.\+Click\+Listener\#on\+Click(\+Wearable\+List\+View.\+View\+Holder)}\+: 
+\begin{DoxyPre}
+       public void onClick(WearableListView.ViewHolder v) \{
+           Integer tag = (Integer) v.itemView.getTag();
+           adapter.setChecked(tag, WearableListConfig.NO\_SELECTION);
+           adapter.notifyDataSetChanged();
+           // use this selection to complete some action ...
+       \}
+\end{DoxyPre}
+
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1WclWearableListViewActivity}{Wcl\+Wearable\+List\+View\+Activity} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\index{com\+::google\+::devrel\+::wcl\+::widgets\+::list\+::\+Selectable\+Wearable\+List\+Adapter@{com\+::google\+::devrel\+::wcl\+::widgets\+::list\+::\+Selectable\+Wearable\+List\+Adapter}!set\+Checked@{set\+Checked}}
+\index{set\+Checked@{set\+Checked}!com\+::google\+::devrel\+::wcl\+::widgets\+::list\+::\+Selectable\+Wearable\+List\+Adapter@{com\+::google\+::devrel\+::wcl\+::widgets\+::list\+::\+Selectable\+Wearable\+List\+Adapter}}
+\subsubsection[{\texorpdfstring{set\+Checked(int checked\+Position, int checked\+Resource\+Id)}{setChecked(int checkedPosition, int checkedResourceId)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+widgets.\+list.\+Selectable\+Wearable\+List\+Adapter.\+set\+Checked (
+\begin{DoxyParamCaption}
+\item[{int}]{checked\+Position, }
+\item[{int}]{checked\+Resource\+Id}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1SelectableWearableListAdapter_a8b47c5e515a0b5589241612e9d3ede5e}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1SelectableWearableListAdapter_a8b47c5e515a0b5589241612e9d3ede5e}
+Sets the state of the row to \char`\"{}checked\char`\"{} at the index
+\begin{DoxyCode}
+position 
+\end{DoxyCode}
+ and uses the icon 
+\begin{DoxyCode}
+checkedResourceIcon 
+\end{DoxyCode}
+ to visually show that state. In order for this method to be take effect, you also need to make the list \char`\"{}checkable\char`\"{} by calling 
+\begin{DoxyCode}
+setCheckable(\textcolor{keyword}{true}) 
+\end{DoxyCode}
+ . If
+\begin{DoxyCode}
+WearableListConfig.NO\_SELECTION 
+\end{DoxyCode}
+ is passed for the icon, the default resource identified in the
+\begin{DoxyCode}
+R.drawable.wcl\_list\_default\_checked\_icon 
+\end{DoxyCode}
+ alias will be used. For
+\begin{DoxyCode}
+checkedPosition < 0 
+\end{DoxyCode}
+ or
+\begin{DoxyCode}
+checkedPosition > n - 1 
+\end{DoxyCode}
+ where 
+\begin{DoxyCode}
+n 
+\end{DoxyCode}
+ is the size of the data array, calling this method will not do anything. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Wearable\+Project\+\_\+\+Complete/\+Wear\+Companion\+Library/\+W\+C\+L/src/main/java/com/google/devrel/wcl/widgets/list/Selectable\+Wearable\+List\+Adapter.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,183 @@
+\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils}{}\section{com.\+google.\+devrel.\+wcl.\+Utils Class Reference}
+\label{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils}\index{com.\+google.\+devrel.\+wcl.\+Utils@{com.\+google.\+devrel.\+wcl.\+Utils}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils_afdcb01a7c4c15fb8eee5e939bf909c2f}{get\+Wifi\+Connectivity\+Status} (Context context)
+\item 
+static Node \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils_a6cad21ff79fa0fe2a34947b48e3f53fb}{filter\+For\+Nearby} (@Nullable Set$<$ Node $>$ nodes)
+\item 
+static boolean \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils_ae788d176cca50e3e035e19c229a1d855}{is\+Ui\+Thread} ()
+\item 
+static void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils_a94b6bc1c6ae64456c006627e41e2b3e7}{assert\+Ui\+Thread} ()
+\item 
+static void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils_aead382b1097686c859b9127db8f7c68a}{assert\+Non\+Ui\+Thread} ()
+\item 
+static$<$ T $>$ T \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils_a74e2b69191420bcbe0293e53d6a93391}{assert\+Not\+Null} (T object, String name)
+\item 
+static void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils_a39675caf16886fb57cb99afca5d91424}{assert\+Not\+Empty} (String string, String name)
+\item 
+static Asset \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils_a2d28fdc1d82d96aa85bf2f23f8ca468a}{to\+Asset} (Bitmap bitmap)
+\item 
+static final boolean \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils_a88052da4733eaae76d051022117a8464}{wear\+Has\+Speaker} (Context context)
+\item 
+static String \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils_a6675d4b2ad568363fa4e7766f02e203a}{build\+Uuid} ()
+\item 
+static void \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils_a04e29e5172f90c4f2c2001de10060126}{L\+O\+GD} (String tag, String message)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int {\bfseries W\+I\+F\+I\+\_\+\+D\+I\+S\+A\+B\+L\+ED} = 1\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils_a26e486d54a4a3e76fe6ff420bd28badc}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils_a26e486d54a4a3e76fe6ff420bd28badc}
+
+\item 
+static final int {\bfseries W\+I\+F\+I\+\_\+\+N\+O\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+ON} = 2\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils_aef480823e193c4b48c400afb26e3f009}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils_aef480823e193c4b48c400afb26e3f009}
+
+\item 
+static final int {\bfseries W\+I\+F\+I\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED} = 3\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils_a709fcce8b5cd805e9cdde87ce6430531}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils_a709fcce8b5cd805e9cdde87ce6430531}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A set of static utility methods used in the library or made available to the client applications. 
+
+\subsection{Member Function Documentation}
+\index{com\+::google\+::devrel\+::wcl\+::\+Utils@{com\+::google\+::devrel\+::wcl\+::\+Utils}!assert\+Non\+Ui\+Thread@{assert\+Non\+Ui\+Thread}}
+\index{assert\+Non\+Ui\+Thread@{assert\+Non\+Ui\+Thread}!com\+::google\+::devrel\+::wcl\+::\+Utils@{com\+::google\+::devrel\+::wcl\+::\+Utils}}
+\subsubsection[{\texorpdfstring{assert\+Non\+Ui\+Thread()}{assertNonUiThread()}}]{\setlength{\rightskip}{0pt plus 5cm}static void com.\+google.\+devrel.\+wcl.\+Utils.\+assert\+Non\+Ui\+Thread (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils_aead382b1097686c859b9127db8f7c68a}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils_aead382b1097686c859b9127db8f7c68a}
+Asserts that the current thread is a worker (i.\+e. non-\/\+UI) thread; if not, this method throws an \hyperlink{}{Illegal\+State\+Exception}. \index{com\+::google\+::devrel\+::wcl\+::\+Utils@{com\+::google\+::devrel\+::wcl\+::\+Utils}!assert\+Not\+Empty@{assert\+Not\+Empty}}
+\index{assert\+Not\+Empty@{assert\+Not\+Empty}!com\+::google\+::devrel\+::wcl\+::\+Utils@{com\+::google\+::devrel\+::wcl\+::\+Utils}}
+\subsubsection[{\texorpdfstring{assert\+Not\+Empty(\+String string, String name)}{assertNotEmpty(String string, String name)}}]{\setlength{\rightskip}{0pt plus 5cm}static void com.\+google.\+devrel.\+wcl.\+Utils.\+assert\+Not\+Empty (
+\begin{DoxyParamCaption}
+\item[{String}]{string, }
+\item[{String}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils_a39675caf16886fb57cb99afca5d91424}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils_a39675caf16886fb57cb99afca5d91424}
+Asserts that the
+\begin{DoxyCode}
+\textcolor{keywordtype}{string} 
+\end{DoxyCode}
+ is not empty or
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ . It throws an \hyperlink{}{Illegal\+Argument\+Exception} if it is.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & The string to inspect \\
+\hline
+{\em name} & A name for the string to be used in the N\+PE message \\
+\hline
+\end{DoxyParams}
+\index{com\+::google\+::devrel\+::wcl\+::\+Utils@{com\+::google\+::devrel\+::wcl\+::\+Utils}!assert\+Not\+Null@{assert\+Not\+Null}}
+\index{assert\+Not\+Null@{assert\+Not\+Null}!com\+::google\+::devrel\+::wcl\+::\+Utils@{com\+::google\+::devrel\+::wcl\+::\+Utils}}
+\subsubsection[{\texorpdfstring{assert\+Not\+Null(\+T object, String name)}{assertNotNull(T object, String name)}}]{\setlength{\rightskip}{0pt plus 5cm}static $<$T$>$ T com.\+google.\+devrel.\+wcl.\+Utils.\+assert\+Not\+Null (
+\begin{DoxyParamCaption}
+\item[{T}]{object, }
+\item[{String}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils_a74e2b69191420bcbe0293e53d6a93391}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils_a74e2b69191420bcbe0293e53d6a93391}
+Returns the
+\begin{DoxyCode}
+\textcolor{keywordtype}{object} 
+\end{DoxyCode}
+ if it is not
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ , or throws a \hyperlink{}{Null\+Pointer\+Exception} otherwise.
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & The object to inspect \\
+\hline
+{\em name} & A name for the object to be used in the N\+PE message \\
+\hline
+\end{DoxyParams}
+\index{com\+::google\+::devrel\+::wcl\+::\+Utils@{com\+::google\+::devrel\+::wcl\+::\+Utils}!assert\+Ui\+Thread@{assert\+Ui\+Thread}}
+\index{assert\+Ui\+Thread@{assert\+Ui\+Thread}!com\+::google\+::devrel\+::wcl\+::\+Utils@{com\+::google\+::devrel\+::wcl\+::\+Utils}}
+\subsubsection[{\texorpdfstring{assert\+Ui\+Thread()}{assertUiThread()}}]{\setlength{\rightskip}{0pt plus 5cm}static void com.\+google.\+devrel.\+wcl.\+Utils.\+assert\+Ui\+Thread (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils_a94b6bc1c6ae64456c006627e41e2b3e7}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils_a94b6bc1c6ae64456c006627e41e2b3e7}
+Asserts that the current thread is the UI thread; if not, this method throws an \hyperlink{}{Illegal\+State\+Exception}. \index{com\+::google\+::devrel\+::wcl\+::\+Utils@{com\+::google\+::devrel\+::wcl\+::\+Utils}!build\+Uuid@{build\+Uuid}}
+\index{build\+Uuid@{build\+Uuid}!com\+::google\+::devrel\+::wcl\+::\+Utils@{com\+::google\+::devrel\+::wcl\+::\+Utils}}
+\subsubsection[{\texorpdfstring{build\+Uuid()}{buildUuid()}}]{\setlength{\rightskip}{0pt plus 5cm}static String com.\+google.\+devrel.\+wcl.\+Utils.\+build\+Uuid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils_a6675d4b2ad568363fa4e7766f02e203a}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils_a6675d4b2ad568363fa4e7766f02e203a}
+Returns a random U\+U\+ID \index{com\+::google\+::devrel\+::wcl\+::\+Utils@{com\+::google\+::devrel\+::wcl\+::\+Utils}!filter\+For\+Nearby@{filter\+For\+Nearby}}
+\index{filter\+For\+Nearby@{filter\+For\+Nearby}!com\+::google\+::devrel\+::wcl\+::\+Utils@{com\+::google\+::devrel\+::wcl\+::\+Utils}}
+\subsubsection[{\texorpdfstring{filter\+For\+Nearby("@Nullable Set$<$ Node $>$ nodes)}{filterForNearby(@Nullable Set< Node > nodes)}}]{\setlength{\rightskip}{0pt plus 5cm}static Node com.\+google.\+devrel.\+wcl.\+Utils.\+filter\+For\+Nearby (
+\begin{DoxyParamCaption}
+\item[{@Nullable Set$<$ Node $>$}]{nodes}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils_a6cad21ff79fa0fe2a34947b48e3f53fb}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils_a6cad21ff79fa0fe2a34947b48e3f53fb}
+Returns one nearby node from
+\begin{DoxyCode}
+nodes 
+\end{DoxyCode}
+ , or
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ if there is no nearby node, \index{com\+::google\+::devrel\+::wcl\+::\+Utils@{com\+::google\+::devrel\+::wcl\+::\+Utils}!get\+Wifi\+Connectivity\+Status@{get\+Wifi\+Connectivity\+Status}}
+\index{get\+Wifi\+Connectivity\+Status@{get\+Wifi\+Connectivity\+Status}!com\+::google\+::devrel\+::wcl\+::\+Utils@{com\+::google\+::devrel\+::wcl\+::\+Utils}}
+\subsubsection[{\texorpdfstring{get\+Wifi\+Connectivity\+Status(\+Context context)}{getWifiConnectivityStatus(Context context)}}]{\setlength{\rightskip}{0pt plus 5cm}static int com.\+google.\+devrel.\+wcl.\+Utils.\+get\+Wifi\+Connectivity\+Status (
+\begin{DoxyParamCaption}
+\item[{Context}]{context}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils_afdcb01a7c4c15fb8eee5e939bf909c2f}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils_afdcb01a7c4c15fb8eee5e939bf909c2f}
+Returns the status of wifi connectivity. The possible states are 
+\begin{DoxyItemize}
+\item W\+I\+F\+I\+\_\+\+D\+I\+S\+A\+B\+L\+ED 
+\item W\+I\+F\+I\+\_\+\+N\+O\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+ON 
+\item W\+I\+F\+I\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED 
+\end{DoxyItemize}\index{com\+::google\+::devrel\+::wcl\+::\+Utils@{com\+::google\+::devrel\+::wcl\+::\+Utils}!is\+Ui\+Thread@{is\+Ui\+Thread}}
+\index{is\+Ui\+Thread@{is\+Ui\+Thread}!com\+::google\+::devrel\+::wcl\+::\+Utils@{com\+::google\+::devrel\+::wcl\+::\+Utils}}
+\subsubsection[{\texorpdfstring{is\+Ui\+Thread()}{isUiThread()}}]{\setlength{\rightskip}{0pt plus 5cm}static boolean com.\+google.\+devrel.\+wcl.\+Utils.\+is\+Ui\+Thread (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils_ae788d176cca50e3e035e19c229a1d855}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils_ae788d176cca50e3e035e19c229a1d855}
+Returns
+\begin{DoxyCode}
+\textcolor{keyword}{true} 
+\end{DoxyCode}
+ if and only if the current thread is the UI thread. \index{com\+::google\+::devrel\+::wcl\+::\+Utils@{com\+::google\+::devrel\+::wcl\+::\+Utils}!L\+O\+GD@{L\+O\+GD}}
+\index{L\+O\+GD@{L\+O\+GD}!com\+::google\+::devrel\+::wcl\+::\+Utils@{com\+::google\+::devrel\+::wcl\+::\+Utils}}
+\subsubsection[{\texorpdfstring{L\+O\+G\+D(\+String tag, String message)}{LOGD(String tag, String message)}}]{\setlength{\rightskip}{0pt plus 5cm}static void com.\+google.\+devrel.\+wcl.\+Utils.\+L\+O\+GD (
+\begin{DoxyParamCaption}
+\item[{String}]{tag, }
+\item[{String}]{message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils_a04e29e5172f90c4f2c2001de10060126}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils_a04e29e5172f90c4f2c2001de10060126}
+A simple wrapper around Log.\+d \index{com\+::google\+::devrel\+::wcl\+::\+Utils@{com\+::google\+::devrel\+::wcl\+::\+Utils}!to\+Asset@{to\+Asset}}
+\index{to\+Asset@{to\+Asset}!com\+::google\+::devrel\+::wcl\+::\+Utils@{com\+::google\+::devrel\+::wcl\+::\+Utils}}
+\subsubsection[{\texorpdfstring{to\+Asset(\+Bitmap bitmap)}{toAsset(Bitmap bitmap)}}]{\setlength{\rightskip}{0pt plus 5cm}static Asset com.\+google.\+devrel.\+wcl.\+Utils.\+to\+Asset (
+\begin{DoxyParamCaption}
+\item[{Bitmap}]{bitmap}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils_a2d28fdc1d82d96aa85bf2f23f8ca468a}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils_a2d28fdc1d82d96aa85bf2f23f8ca468a}
+Builds an \hyperlink{}{com.\+google.\+android.\+gms.\+wearable.\+Asset} from a bitmap. The image that we get back from the camera in \char`\"{}data\char`\"{} is a thumbnail size. Typically, your image should not exceed 320x320 and if you want to have zoom and parallax effect in your app, limit the size of your image to 640x400. Resize your image before transferring to your wearable device. \index{com\+::google\+::devrel\+::wcl\+::\+Utils@{com\+::google\+::devrel\+::wcl\+::\+Utils}!wear\+Has\+Speaker@{wear\+Has\+Speaker}}
+\index{wear\+Has\+Speaker@{wear\+Has\+Speaker}!com\+::google\+::devrel\+::wcl\+::\+Utils@{com\+::google\+::devrel\+::wcl\+::\+Utils}}
+\subsubsection[{\texorpdfstring{wear\+Has\+Speaker(\+Context context)}{wearHasSpeaker(Context context)}}]{\setlength{\rightskip}{0pt plus 5cm}static final boolean com.\+google.\+devrel.\+wcl.\+Utils.\+wear\+Has\+Speaker (
+\begin{DoxyParamCaption}
+\item[{Context}]{context}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils_a88052da4733eaae76d051022117a8464}{}\label{classcom_1_1google_1_1devrel_1_1wcl_1_1Utils_a88052da4733eaae76d051022117a8464}
+Determines if the wear device has a built-\/in speaker or not.
+
+{\bfseries Important\+: }This method should only be called on a wear device; the return value on a non-\/wear device can be trusted if and only if the device is running android version M+. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Wearable\+Project\+\_\+\+Complete/\+Wear\+Companion\+Library/\+W\+C\+L/src/main/java/com/google/devrel/wcl/Utils.\+java\end{DoxyCompactItemize}

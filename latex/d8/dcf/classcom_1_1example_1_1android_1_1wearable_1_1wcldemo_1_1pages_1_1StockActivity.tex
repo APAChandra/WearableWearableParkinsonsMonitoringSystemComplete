@@ -1,0 +1,74 @@
+\hypertarget{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1StockActivity}{}\section{com.\+example.\+android.\+wearable.\+wcldemo.\+pages.\+Stock\+Activity Class Reference}
+\label{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1StockActivity}\index{com.\+example.\+android.\+wearable.\+wcldemo.\+pages.\+Stock\+Activity@{com.\+example.\+android.\+wearable.\+wcldemo.\+pages.\+Stock\+Activity}}
+
+
+Inheritance diagram for com.\+example.\+android.\+wearable.\+wcldemo.\+pages.\+Stock\+Activity\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d0b/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1StockActivity__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+example.\+android.\+wearable.\+wcldemo.\+pages.\+Stock\+Activity\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/dc2/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1StockActivity__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1StockActivity_a175b9ab0505f9c4dfb8b1f4928e96271}{on\+Http\+Response\+Received} (String request\+Id, int status, String response)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries on\+Create} (Bundle saved\+Instance\+State)\hypertarget{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1StockActivity_ad80d4d087998bba535840e7d6905025f}{}\label{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1StockActivity_ad80d4d087998bba535840e7d6905025f}
+
+\item 
+void {\bfseries on\+Resume} ()\hypertarget{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1StockActivity_a971a19cd31a4dc395d3a95d71b1d5694}{}\label{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1StockActivity_a971a19cd31a4dc395d3a95d71b1d5694}
+
+\item 
+void {\bfseries on\+Pause} ()\hypertarget{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1StockActivity_a95b544e3a283a8ac3cff062b303557c6}{}\label{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1StockActivity_a95b544e3a283a8ac3cff062b303557c6}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A simple activity that makes an H\+T\+TP request to get the G\+O\+O\+G\+LE stock price and if successful, presents the result to the user. The H\+T\+TP request is made using the \hyperlink{}{Wear\+Http\+Helper} helper class. 
+
+\subsection{Member Function Documentation}
+\index{com\+::example\+::android\+::wearable\+::wcldemo\+::pages\+::\+Stock\+Activity@{com\+::example\+::android\+::wearable\+::wcldemo\+::pages\+::\+Stock\+Activity}!on\+Http\+Response\+Received@{on\+Http\+Response\+Received}}
+\index{on\+Http\+Response\+Received@{on\+Http\+Response\+Received}!com\+::example\+::android\+::wearable\+::wcldemo\+::pages\+::\+Stock\+Activity@{com\+::example\+::android\+::wearable\+::wcldemo\+::pages\+::\+Stock\+Activity}}
+\subsubsection[{\texorpdfstring{on\+Http\+Response\+Received(\+String request\+Id, int status, String response)}{onHttpResponseReceived(String requestId, int status, String response)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+example.\+android.\+wearable.\+wcldemo.\+pages.\+Stock\+Activity.\+on\+Http\+Response\+Received (
+\begin{DoxyParamCaption}
+\item[{String}]{request\+Id, }
+\item[{int}]{status, }
+\item[{String}]{response}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1StockActivity_a175b9ab0505f9c4dfb8b1f4928e96271}{}\label{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1StockActivity_a175b9ab0505f9c4dfb8b1f4928e96271}
+Called, on the main thread, when the response to the H\+T\+TP request is available.
+
+
+\begin{DoxyParams}{Parameters}
+{\em request\+Id} & A unique id that was created and associated with this request \\
+\hline
+{\em status} & The status code of the response. Positive numbers reflect the H\+T\+TP status and negative values are custom errors, defined in the \hyperlink{}{Wear\+Http\+Helper} class. \\
+\hline
+{\em response} & The text-\/based response of the request. If there is an error, this can be {\ttfamily null} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearHttpHelper_1_1OnHttpResponseListener_a4a50a3e8b12bfdc0be91232a1e7b4ac9}{com.\+google.\+devrel.\+wcl.\+connectivity.\+Wear\+Http\+Helper.\+On\+Http\+Response\+Listener}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Wearable\+Project\+\_\+\+Complete/\+Wcl\+Demo\+Sample/wear/src/main/java/com/example/android/wearable/wcldemo/pages/Stock\+Activity.\+java\end{DoxyCompactItemize}

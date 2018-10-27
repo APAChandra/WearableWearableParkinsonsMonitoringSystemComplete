@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Renos\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\disklrucache\4.0.0\d88059003509074dd59fa226c822724bcf5ec0ca\disklrucache-4.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d88059003509074dd59fa226c822724bcf5ec0ca">
+        <dex dex="C:\Users\Renos\WearableParkinsonsMonitoringSystem\WearableProject_Complete\WclDemoSample\mobile\build\intermediates\pre-dexed\debug\disklrucache-4.0.0_1b6e9913e4220a16a448e1a6279ca4ee347659af.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Renos\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\4.0.0\dff931af436f0a2815d0109ab2258bbce2d6275d\glide-4.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="dff931af436f0a2815d0109ab2258bbce2d6275d">
+        <dex dex="C:\Users\Renos\WearableParkinsonsMonitoringSystem\WearableProject_Complete\WclDemoSample\mobile\build\intermediates\pre-dexed\debug\glide-4.0.0_b34a72041e13dbadaf2cbf20d9d93bd8e083a9b4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Renos\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\gifdecoder\4.0.0\47c487cc4e64e6ab127a517669ca9a7b49f8c61d\gifdecoder-4.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="47c487cc4e64e6ab127a517669ca9a7b49f8c61d">
+        <dex dex="C:\Users\Renos\WearableParkinsonsMonitoringSystem\WearableProject_Complete\WclDemoSample\mobile\build\intermediates\pre-dexed\debug\gifdecoder-4.0.0_11c26ceb80dc3f1176baf1aca5be3d328c7b21cd.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Renos\WearableParkinsonsMonitoringSystem\WearableProject_Complete\WclDemoSample\mobile\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="42a8a44e2ad08f57e4b66f1608ec6f410da68ddd">
+        <dex dex="C:\Users\Renos\WearableParkinsonsMonitoringSystem\WearableProject_Complete\WclDemoSample\mobile\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_e5edb173689c4d516b7b3d3f89a3abec26bfb57f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Renos\WearableParkinsonsMonitoringSystem\WearableProject_Complete\WclDemoSample\mobile\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="12920f9016b8b05acbc2af7cdc13cef6946fe7d3">
+        <dex dex="C:\Users\Renos\WearableParkinsonsMonitoringSystem\WearableProject_Complete\WclDemoSample\mobile\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_0144ff8690bc5dab14a7cc7f3cfbc777c1d03444\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Renos\WearableParkinsonsMonitoringSystem\WearableProject_Complete\WearCompanionLibrary\WCL\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1f67d0e43214f06eac09998629347069b7b74b0f">
+        <dex dex="C:\Users\Renos\WearableParkinsonsMonitoringSystem\WearableProject_Complete\WclDemoSample\wear\build\intermediates\pre-dexed\debug\classes_07f3a9b5851c15891965697f9e601a45eae48fe0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Renos\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="C:\Users\Renos\WearableParkinsonsMonitoringSystem\WearableProject_Complete\WclDemoSample\mobile\build\intermediates\pre-dexed\debug\support-annotations-25.3.1_56a90320e95277433378c9b1d39f0ca2e80318dd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Renos\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\annotations\4.0.0\f80192e6fd828d41c7da6f3552b0bef5d89cb26e\annotations-4.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f80192e6fd828d41c7da6f3552b0bef5d89cb26e">
+        <dex dex="C:\Users\Renos\WearableParkinsonsMonitoringSystem\WearableProject_Complete\WclDemoSample\mobile\build\intermediates\pre-dexed\debug\annotations-4.0.0_ddb7a84088ad0384183e9a882516b0272a758ac2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Renos\WearableParkinsonsMonitoringSystem\WearableProject_Complete\WclDemoSample\shared\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="69dcde9c8ccb1455529583c0fdffd05e7a935c23">
+        <dex dex="C:\Users\Renos\WearableParkinsonsMonitoringSystem\WearableProject_Complete\WclDemoSample\wear\build\intermediates\pre-dexed\debug\classes_f3bf0e8a8774878bec56caddff0aadd9c1b92f6f.jar" />
+    </item>
+
+</items>

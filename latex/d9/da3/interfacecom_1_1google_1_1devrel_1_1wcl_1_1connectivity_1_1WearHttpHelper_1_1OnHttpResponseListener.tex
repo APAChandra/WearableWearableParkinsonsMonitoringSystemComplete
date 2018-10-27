@@ -1,0 +1,43 @@
+\hypertarget{interfacecom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearHttpHelper_1_1OnHttpResponseListener}{}\section{com.\+google.\+devrel.\+wcl.\+connectivity.\+Wear\+Http\+Helper.\+On\+Http\+Response\+Listener Interface Reference}
+\label{interfacecom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearHttpHelper_1_1OnHttpResponseListener}\index{com.\+google.\+devrel.\+wcl.\+connectivity.\+Wear\+Http\+Helper.\+On\+Http\+Response\+Listener@{com.\+google.\+devrel.\+wcl.\+connectivity.\+Wear\+Http\+Helper.\+On\+Http\+Response\+Listener}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearHttpHelper_1_1OnHttpResponseListener_a4a50a3e8b12bfdc0be91232a1e7b4ac9}{on\+Http\+Response\+Received} (String request\+Id, int status, String response)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The interface for receiving the result of http request. Clients that are interested to receive the response to the H\+T\+TP request can implement this interface and register themselves.
+
+\begin{DoxySeeAlso}{See also}
+Builder\+::set\+Http\+Response\+Listener(\hyperlink{interfacecom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearHttpHelper_1_1OnHttpResponseListener}{Wear\+Http\+Helper.\+On\+Http\+Response\+Listener}) 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\index{com\+::google\+::devrel\+::wcl\+::connectivity\+::\+Wear\+Http\+Helper\+::\+On\+Http\+Response\+Listener@{com\+::google\+::devrel\+::wcl\+::connectivity\+::\+Wear\+Http\+Helper\+::\+On\+Http\+Response\+Listener}!on\+Http\+Response\+Received@{on\+Http\+Response\+Received}}
+\index{on\+Http\+Response\+Received@{on\+Http\+Response\+Received}!com\+::google\+::devrel\+::wcl\+::connectivity\+::\+Wear\+Http\+Helper\+::\+On\+Http\+Response\+Listener@{com\+::google\+::devrel\+::wcl\+::connectivity\+::\+Wear\+Http\+Helper\+::\+On\+Http\+Response\+Listener}}
+\subsubsection[{\texorpdfstring{on\+Http\+Response\+Received(\+String request\+Id, int status, String response)}{onHttpResponseReceived(String requestId, int status, String response)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+google.\+devrel.\+wcl.\+connectivity.\+Wear\+Http\+Helper.\+On\+Http\+Response\+Listener.\+on\+Http\+Response\+Received (
+\begin{DoxyParamCaption}
+\item[{String}]{request\+Id, }
+\item[{int}]{status, }
+\item[{String}]{response}
+\end{DoxyParamCaption}
+)}\hypertarget{interfacecom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearHttpHelper_1_1OnHttpResponseListener_a4a50a3e8b12bfdc0be91232a1e7b4ac9}{}\label{interfacecom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearHttpHelper_1_1OnHttpResponseListener_a4a50a3e8b12bfdc0be91232a1e7b4ac9}
+Called, on the main thread, when the response to the H\+T\+TP request is available.
+
+
+\begin{DoxyParams}{Parameters}
+{\em request\+Id} & A unique id that was created and associated with this request \\
+\hline
+{\em status} & The status code of the response. Positive numbers reflect the H\+T\+TP status and negative values are custom errors, defined in the \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearHttpHelper}{Wear\+Http\+Helper} class. \\
+\hline
+{\em response} & The text-\/based response of the request. If there is an error, this can be {\ttfamily null} \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Wearable\+Project\+\_\+\+Complete/\+Wear\+Companion\+Library/\+W\+C\+L/src/main/java/com/google/devrel/wcl/connectivity/Wear\+Http\+Helper.\+java\end{DoxyCompactItemize}

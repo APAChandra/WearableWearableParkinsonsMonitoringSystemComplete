@@ -40,7 +40,7 @@ Both of our apps are independent and can be used individually as they also have 
 
 
 # Installation
-1. ```git clone https://github.com/deshmukhrajvardhan/WearableParkinsonsMonitoringSystem.git``` <br />
+1. ```git clone https://github.com/rzabounidis/WearableWearableParkinsonsMonitoringSystemComplete``` <br />
 
 2. Install [Android studio](https://developer.android.com/studio/index.html) <br />
 
